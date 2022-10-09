@@ -13,15 +13,12 @@ coisas que não são mais utilizadas por coisas que teriam uma nova utilidade. A
 [![Maintainability](https://api.codeclimate.com/v1/badges/35aeb9e7f8cb0d45d92c/maintainability)](https://codeclimate.com/github/thatarocket/Cabs/maintainability)
 
 - "Github Actions badge" mostrando o status workflow referente a branch master (deve ser: passing) </p>
-[![Ruby on Rails CI](https://github.com/thatarocket/Cabs/actions/workflows/ci_rubyonrails.yml/badge.svg)](https://github.com/thatarocket/Cabs/actions/workflows/ci_rubyonrails.yml)
- </p>
-
 ![CI/CD](https://github.com/thatarocket/Cabs/actions/workflows/ci.yml/badge.svg) </p>
 
 - "Coveralls badge" mostrando a cobertura de teste do código desenvolvido</p>
 [![Coverage Status](https://coveralls.io/repos/github/thatarocket/Cabs/badge.svg?branch=main)](https://coveralls.io/github/thatarocket/Cabs?branch=main)
 
-- Link para a aplicação implantada no Heroku: [atualizar]</p>
+- Link para a aplicação implantada no Heroku: https://cabs-app-heroku.herokuapp.com/ </p>
 
 - Link para o projeto no Pivotal Tracker: https://www.pivotaltracker.com/projects/2603032 </p>
     
