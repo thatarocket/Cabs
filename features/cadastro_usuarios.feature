@@ -12,7 +12,8 @@ Quando preencho o campo "username" com <username>
 Quando preencho o campo "email" com <email>
 Quando preencho o campo "senha" com <senha>
 E clico em salvar
-Então devo conseguir ter acesso ao sistema
+Então ele deve ter sido salvo no banco de dados
+E deverei ver o usuário na página de listagem de usuários
 
 Exemplos:
 | username        | senha                     | email                         |
