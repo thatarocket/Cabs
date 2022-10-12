@@ -1,7 +1,72 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/myapp/app/channels/application_cable/channel.rb": {
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/controllers/itens_controller.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/helpers/itens_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/models/item.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -11,7 +76,7 @@
         "branches": {
         }
       },
-      "/myapp/app/channels/application_cable/connection.rb": {
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -21,23 +86,7 @@
         "branches": {
         }
       },
-      "/myapp/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/myapp/app/helpers/application_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/myapp/app/jobs/application_job.rb": {
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -50,7 +99,7 @@
         "branches": {
         }
       },
-      "/myapp/app/mailers/application_mailer.rb": {
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -60,8 +109,29 @@
         "branches": {
         }
       },
-      "/myapp/app/models/application_record.rb": {
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/models/item_spec.rb": {
         "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0
@@ -70,6 +140,160 @@
         }
       }
     },
-    "timestamp": 1665345141
+    "timestamp": 1665615587
+  },
+  "RSpec": {
+    "coverage": {
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/controllers/itens_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/helpers/itens_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/models/item.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/models/item_spec.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1665603936
   }
 }
