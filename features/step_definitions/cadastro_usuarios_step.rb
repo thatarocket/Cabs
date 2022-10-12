@@ -30,13 +30,26 @@ Então('deverei ver a mensagem de erro {string}') do |string|
   expect(page).to have_content(string)
 end
 
-Quando('já existe uma conta com esse email') do
-  usuario = Usuario.order("id").last
-  expect(usuario.email).to eq('thais.souza.rodrigues@usp.br') 
+Dado('que já existe uma conta com esse e-mail') do
+  usuario = Usuario.create(username:'thais-teste', email:'thais.souza.rodrigues@usp.br', senha:'teste1234')
+  fill_in 'usuario_username', :with => 'thais-teste'
+  fill_in 'usuario_email', :with => 'thais.souza.rodrigues@usp.br'
+  fill_in 'usuario_senha', :with => 'teste1234'
+  click_on 'Salvar novo usuário'
 
+  expect(usuario.username).to eq('thais-teste') 
+  expect(usuario.email).to eq('thais.souza.rodrigues@usp.br') 
+  expect(usuario.senha).to eq('teste1234')
 end
 
-Quando('já existe uma conta com esse nome de usuário') do
-  usuario = Usuario.order("id").last
+Dado('já existe uma conta com esse nome de usuário') do
+  usuario = Usuario.create(username:'thatarocket', email:'thaisTeste@gmail.com', senha:'teste1234')
+  fill_in 'usuario_username', :with => 'thatarocket'
+  fill_in 'usuario_email', :with => 'thaisTeste@gmail.com'
+  fill_in 'usuario_senha', :with => 'teste1234'
+  click_on 'Salvar novo usuário'
+
   expect(usuario.username).to eq('thatarocket') 
+  expect(usuario.email).to eq('thaisTeste@gmail.com') 
+  expect(usuario.senha).to eq('teste1234')
 end

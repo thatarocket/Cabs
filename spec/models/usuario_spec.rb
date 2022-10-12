@@ -31,7 +31,7 @@ RSpec.describe Usuario, type: :model do
     expect(a).not_to be_valid
   end
 
-  it 'invalido com email que já existe' do
+  it 'Já existe uma conta com esse e-mail!' do
     a = Usuario.new
     a.username = "thais-teste"
     a.senha = "teste1234"
@@ -39,7 +39,7 @@ RSpec.describe Usuario, type: :model do
     expect(a).not_to be_valid
   end
 
-  it 'invalido com nome de usuario que já existe' do
+  it 'Nome de usuário já existe!' do
     a = Usuario.new
     a.username = "thatarocket"
     a.senha = "teste1234"
