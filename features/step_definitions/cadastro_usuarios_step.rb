@@ -33,6 +33,7 @@ end
 Quando('já existe uma conta com esse email') do
   usuario = Usuario.order("id").last
   expect(usuario.email).to eq('thais.souza.rodrigues@usp.br') 
+
 end
 
 Quando('já existe uma conta com esse nome de usuário') do
