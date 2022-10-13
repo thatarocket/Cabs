@@ -1,67 +1,96 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/myapp/app/channels/application_cable/channel.rb": {
+      "/myapp/app/controllers/usuarios_controller.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/myapp/app/channels/application_cable/connection.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/myapp/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/myapp/app/helpers/application_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/myapp/app/jobs/application_job.rb": {
-        "lines": [
-          0,
+          1,
+          1,
+          5,
+          null,
+          null,
+          1,
+          5,
+          null,
+          5,
+          1,
+          null,
+          4,
+          4,
           null,
           null,
           null,
+          1,
+          1,
           null,
           null,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          1,
+          5,
+          null,
+          null
+        ]
       },
-      "/myapp/app/mailers/application_mailer.rb": {
+      "/myapp/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/myapp/app/models/usuario.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1665628230
+  },
+  "RSpec": {
+    "coverage": {
+      "/myapp/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/myapp/app/models/usuario.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/myapp/app/controllers/usuarios_controller.rb": {
         "lines": [
           0,
           0,
           0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/myapp/app/models/application_record.rb": {
-        "lines": [
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
           0,
           0,
           0
@@ -70,6 +99,6 @@
         }
       }
     },
-    "timestamp": 1665345141
+    "timestamp": 1665628257
   }
 }

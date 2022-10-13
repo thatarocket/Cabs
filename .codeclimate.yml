@@ -4,3 +4,11 @@ exclude_patterns:
 - "db/migrate/"
 - "doc/js/"
 - "babel.config.js"
+- "app/controllers/application_controller.rb"
+- "app/helpers/application_helper.rb"
+- "app/models/application_record.rb"
+- "app/channels/application_cable/channel.rb"
+- "app/channels/application_cable/connection.rb"
+- "app/jobs/application_job.rb"
+- "app/mailers/application_mailer.rb"
+
