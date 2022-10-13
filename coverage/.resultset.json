@@ -47,6 +47,58 @@
         ]
       }
     },
-    "timestamp": 1665613472
+    "timestamp": 1665622897
+  },
+  "RSpec": {
+    "coverage": {
+      "/myapp/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/myapp/app/models/usuario.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/myapp/app/controllers/usuarios_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1665624688
   }
 }
