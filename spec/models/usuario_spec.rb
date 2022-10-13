@@ -29,23 +29,6 @@ RSpec.describe Usuario, type: :model do
     a.email = "#,ç/?@@email"    
     expect(a).not_to be_valid
   end
-
-  it 'Já existe uma conta com esse e-mail!' do
-    a = Usuario.new
-    a.username = "thais-teste"
-    a.senha = "teste1234"
-    a.email = "thais.souza.rodrigues@usp.br"    
-    expect(a).not_to be_valid
-  end
-
-  it 'Nome de usuário já existe!' do
-    a = Usuario.new
-    a.username = "thatarocket"
-    a.senha = "teste1234"
-    a.email = "thaisTeste@gmail.com"
-    expect(a).not_to be_valid
-  end
-
   
 
 end

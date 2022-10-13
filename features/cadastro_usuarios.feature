@@ -57,33 +57,6 @@ Exemplos:
 | username        | senha                     | email                         |
 | 'thais-teste'   | 'teste1234'               | ''                            |
 
-Cenário: Cadastro de usuário com erro - email já utilizado
-Dado que estou na página de cadastro de usuário
-Dado que já existe uma conta com esse e-mail
-Quando preencho o campo "Username" com <username>
-Quando preencho o campo "Email" com <email>
-Quando preencho o campo "Senha" com <senha> 
-E clico em salvar
-Então deverei ver a mensagem de erro "Já existe uma conta com esse e-mail!"
-
-Exemplos:
-| username        | senha                     | email                         |
-| 'thais-teste'   | 'teste1234'               | 'thais.souza.rodrigues@usp.br'|
-
-Cenário: Cadastro de usuário com erro - nome de usuário já utilizado
-Dado que estou na página de cadastro de usuário
-Dado já existe uma conta com esse nome de usuário
-Quando preencho o campo "Username" com <username>
-Quando preencho o campo "Email" com <email>
-Quando preencho o campo "Senha" com <senha>
-E clico em salvar
-Então deverei ver a mensagem de erro "Nome de usuário já existe!"
-
-Exemplos:
-| username        | senha                     | email                         |
-| 'thatarocket'   | 'teste1234'               | 'thaisTeste@gmail.com'        |
-
-
 Cenário: Cadastro de usuário com erro - email inválido
 Dado que estou na página de cadastro de usuário
 Quando preencho o campo "Username" com <username>
