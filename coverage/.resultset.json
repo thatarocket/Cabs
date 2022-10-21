@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/myapp/app/controllers/usuarios_controller.rb": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/controllers/usuarios_controller.rb": {
         "lines": [
           1,
           1,
@@ -30,13 +30,13 @@
           null
         ]
       },
-      "/myapp/app/helpers/usuarios_helper.rb": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/helpers/usuarios_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/models/usuario.rb": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/models/usuario.rb": {
         "lines": [
           1,
           1,
@@ -47,17 +47,17 @@
         ]
       }
     },
-    "timestamp": 1665628230
+    "timestamp": 1666205241
   },
   "RSpec": {
     "coverage": {
-      "/myapp/app/helpers/usuarios_helper.rb": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/helpers/usuarios_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/models/usuario.rb": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/models/usuario.rb": {
         "lines": [
           1,
           1,
@@ -67,7 +67,7 @@
           null
         ]
       },
-      "/myapp/app/controllers/usuarios_controller.rb": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/controllers/usuarios_controller.rb": {
         "lines": [
           0,
           0,
@@ -99,6 +99,6 @@
         }
       }
     },
-    "timestamp": 1665628257
+    "timestamp": 1666205262
   }
 }
