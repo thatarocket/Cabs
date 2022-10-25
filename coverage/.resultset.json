@@ -30,6 +30,12 @@
           null
         ]
       },
+      "/myapp/app/helpers/login_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/myapp/app/helpers/usuarios_helper.rb": {
         "lines": [
           1,
@@ -45,9 +51,49 @@
           1,
           null
         ]
+      },
+      "/myapp/app/controllers/login_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/myapp/app/models/login.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1665628230
+    "timestamp": 1666667768
   },
   "RSpec": {
     "coverage": {
