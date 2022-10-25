@@ -1,63 +1,115 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/myapp/app/controllers/usuarios_controller.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/itens_controller.rb": {
         "lines": [
           1,
           1,
-          5,
-          null,
-          null,
-          1,
-          5,
-          null,
-          5,
           1,
           null,
-          4,
-          4,
+          0,
+          0,
+          null,
+          0,
+          0,
           null,
           null,
           null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          5,
           null,
           null
         ]
       },
-      "/myapp/app/helpers/usuarios_helper.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/itens_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/models/usuario.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/item.rb": {
         "lines": [
           1,
           1,
           1,
-          null,
+          1,
           1,
           null
         ]
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/usuarios_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/usuario.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1665628230
+    "timestamp": 1666618658
   },
   "RSpec": {
     "coverage": {
-      "/myapp/app/helpers/usuarios_helper.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/itens_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/models/usuario.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/item_search.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/usuario.rb": {
         "lines": [
           1,
           1,
@@ -67,7 +119,20 @@
           null
         ]
       },
-      "/myapp/app/controllers/usuarios_controller.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/itens_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null
+        ],
+        "branches": {
+        }
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/usuarios_controller.rb": {
         "lines": [
           0,
           0,
@@ -99,6 +164,6 @@
         }
       }
     },
-    "timestamp": 1665628257
+    "timestamp": 1666667943
   }
 }

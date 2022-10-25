@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :usuarios
   get "/application", to: "application#index"
+
+  resources :itens
+  post "/itens", to: "itens#search"
+
 end
