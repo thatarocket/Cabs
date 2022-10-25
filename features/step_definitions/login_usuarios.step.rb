@@ -1,5 +1,5 @@
 Dado('que estou na página de login do usuário') do
-    visit '/login/new'
+    visit '/login'
 end
   
 Quando('clico em entrar') do
