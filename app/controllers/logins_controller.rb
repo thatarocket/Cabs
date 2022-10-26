@@ -4,7 +4,7 @@ class LoginsController < ApplicationController
     end
 
     def create
-        usuario = Usuario.find_by(username: params[:username])
+        usuario = Login.find_by(username: params[:username])
         if usuario.present?
             session[:usuario_id] = usuario.id
             redirect_to root_path, notice: "Logado com sucesso"
