@@ -38,14 +38,3 @@ Então deverei ver a mensagem de erro "É obrigatório informar o nome de usuár
 Exemplos:
 | username        | senha             | 
 | ''              | 'teste1234'       | 
-
-Cenário: Login de usuário com erro - senha incorreta
-Dado que estou na página de login do usuário
-Quando preencho o campo "Senha" com <senha>
-E preencho o campo "Username" com <username>
-E clico em entrar
-Então deverei ver a mensagem de erro "Dados incorretos!"
-
-Exemplos:
-| username        | senha             | 
-| 'thais-teste'   | 'blablabla'       | 

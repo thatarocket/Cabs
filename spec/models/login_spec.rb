@@ -12,4 +12,5 @@ RSpec.describe Login, type: :model do
     usuario.username = "thais-teste"
     expect(usuario).not_to be_valid
   end
+  
 end
