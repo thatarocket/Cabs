@@ -4,6 +4,7 @@ class LoginsController < ApplicationController
     end
 
     def create
+        @login = Login.new(login_params)
         usuario = Login.find_by(username: params[:username])
         if usuario.present?
             session[:usuario_id] = usuario.id
