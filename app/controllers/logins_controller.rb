@@ -10,7 +10,8 @@ class LoginsController < ApplicationController
             redirect_to root_path, notice: "Logado com sucesso"
         else
             flash[:alert] = "Username ou senha inválidos"
-            render :new
+            render :new, status: :unprocessable_entity, content_type: "text/html"
+            headers["Content-Type"] = "text/html"
         end
     end
 
