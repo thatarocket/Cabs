@@ -7,5 +7,5 @@ Quando('clico em entrar') do
 end
   
 Então('devo conseguir ter acesso ao sistema') do
-    expect(page).to have_content('thais-teste')
+    expect(page).to have_content('Bem vindo ao Cabs!')
 end

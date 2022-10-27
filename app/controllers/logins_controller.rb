@@ -7,7 +7,6 @@ class LoginsController < ApplicationController
         @login = Login.new(login_params)
 
         if @login.valid?
-            session[:usuario_id] = usuario.id
             redirect_to root_path, notice: "Logado com sucesso"
         else
             flash[:alert] = "Username ou senha inválidos"
