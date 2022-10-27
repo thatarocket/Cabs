@@ -5,8 +5,8 @@ class LoginsController < ApplicationController
 
     def create
         @login = Login.new(login_params)
-        usuario = Login.find_by(username: params[:username])
-        if usuario.present?
+
+        if @login.valid?
             session[:usuario_id] = usuario.id
             redirect_to root_path, notice: "Logado com sucesso"
         else
