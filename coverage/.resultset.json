@@ -5,6 +5,25 @@
         "lines": [
           1,
           1,
+          10,
+          null,
+          null,
+          1,
+          10,
+          null,
+          10,
+          6,
+          null,
+          4,
+          4,
+          null,
+          null,
+          null,
+          1,
+          7,
+          null,
+          null,
+          1,
           5,
           null,
           null,
@@ -21,11 +40,7 @@
           null,
           1,
           1,
-          null,
-          null,
-          1,
-          1,
-          5,
+          15,
           null,
           null
         ]
@@ -87,100 +102,6 @@
         ]
       }
     },
-    "timestamp": 1666894703
-  },
-  "RSpec": {
-    "coverage": {
-      "/myapp/app/helpers/logins_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/myapp/app/helpers/usuarios_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/myapp/app/models/login.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/myapp/app/models/usuario.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/myapp/app/controllers/logins_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/myapp/app/controllers/usuarios_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      }
-    },
-    "timestamp": 1666894720
+    "timestamp": 1666898990
   }
 }
