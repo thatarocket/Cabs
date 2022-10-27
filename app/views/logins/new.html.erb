@@ -1,0 +1,32 @@
+<h1>Login do usuário</h1>
+
+<% if @login.errors.any? %>
+<div id="error_explanation">
+    <h2>
+    <%= @login.errors.count %> erro(s) impedem que o login aconteça:
+    </h2>
+    <ul>
+    <% @login.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+    <% end %>
+    </ul>
+</div>
+<% end %>
+
+
+<%= form_with scope: :login, url: login_path, local: true do |form| %>
+  <p>
+    <%= form.label :username %><br>
+    <%= form.text_field :username, placeholder: "username" %>
+  </p>
+ 
+  <p>
+    <%= form.label :senha %><br>
+    <%= form.password_field :senha, placeholder: "senha" %>
+  </p>
+
+  <p>
+    <%= form.submit 'Realizar login' %>
+  </p>
+
+<% end %>
