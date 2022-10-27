@@ -7,7 +7,7 @@ class LoginsController < ApplicationController
         @login = Login.new(login_params)
 
         if @login.valid?
-            redirect_to root_path, notice: "Logado com sucesso"
+            redirect_to :application , notice: "Logado com sucesso"
         else
             flash[:alert] = "Username ou senha inválidos"
             render :new, status: :unprocessable_entity, content_type: "text/html"
