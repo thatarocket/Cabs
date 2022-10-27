@@ -15,10 +15,6 @@ class LoginsController < ApplicationController
         end
     end
 
-    def show
-        @login = Login.find(params[:id])
-    end
-
     private
     def login_params
         params.require(:login).permit(:username, :senha)
