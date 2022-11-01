@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/myapp/app/controllers/usuarios_controller.rb": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/controllers/usuarios_controller.rb": {
         "lines": [
           1,
           1,
@@ -45,19 +45,19 @@
           null
         ]
       },
-      "/myapp/app/helpers/logins_helper.rb": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/helpers/logins_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/helpers/usuarios_helper.rb": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/helpers/usuarios_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/models/usuario.rb": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/models/usuario.rb": {
         "lines": [
           1,
           1,
@@ -67,7 +67,7 @@
           null
         ]
       },
-      "/myapp/app/controllers/logins_controller.rb": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/controllers/logins_controller.rb": {
         "lines": [
           1,
           1,
@@ -93,7 +93,7 @@
           null
         ]
       },
-      "/myapp/app/models/login.rb": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/models/login.rb": {
         "lines": [
           1,
           1,
@@ -102,6 +102,6 @@
         ]
       }
     },
-    "timestamp": 1666898990
+    "timestamp": 1667327497
   }
 }
