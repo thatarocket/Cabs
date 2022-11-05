@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome</strong>
+  <%= @item_troca.nome %>
+</p>
+
+<p>
+  <strong>Imagens</strong>
+  <%= @item_troca.images.each do |image| %>
+    <div style="width:250px; height:250px;">
+      <%= image_tag(image, style:"width:100%; height: auto;")  %>
+    </div>
+  <% end %>
+</p>
+
+<p>
+  <strong>Descrição</strong>
+  <%= @item_troca.descricao %>
+</p>
+
+<p>
+  <strong>Condição</strong>
+  <%= @item_troca.condicao %>
+</p>
+
+<p>
+  <strong>Categoria</strong>
+  <%= @item_troca.categoria %>
+</p>
+
+<div>
+  <%= link_to "Editar este item", edit_item_troca_path(@item_troca) %> |
+  <%= link_to "Voltar aos itens", item_trocas_path %>
+
+  <%= button_to "Excluir este item", @item_troca, method: :delete %>
+</div>
