@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   resources :usuarios
 
   resource :login, only: [:new, :create]
+
+  resources :favoritos
+
+  resources :itens
   
   get "/application", to: "application#index"
 end

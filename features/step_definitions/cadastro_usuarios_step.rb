@@ -10,7 +10,7 @@ Quando('clico em salvar') do
   click_on 'Salvar novo usuário'
 end
 
-Então('ele deve ter sido salvo no banco de dados') do
+Então('o usuário deve ter sido salvo no banco de dados') do
   usuario = Usuario.order("id").last
   expect(usuario.username).to eq('thais-teste') 
   expect(usuario.email).to eq('thaisTeste@gmail.com') 

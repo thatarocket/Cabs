@@ -12,7 +12,7 @@ Quando preencho o campo "Username" com <username>
 Quando preencho o campo "Email" com <email>
 Quando preencho o campo "Senha" com <senha>
 E clico em salvar
-Então ele deve ter sido salvo no banco de dados
+Então o usuário deve ter sido salvo no banco de dados
 E deverei ver o usuário na página de listagem de usuários
 
 Exemplos:
