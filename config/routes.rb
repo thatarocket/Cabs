@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   resource :login, only: [:new, :create]
   
   get "/application", to: "application#index"
+  post "/usuarios", to: "usuarios#create"
 end
