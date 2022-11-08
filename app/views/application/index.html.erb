@@ -1,3 +1,8 @@
-<h2>
+<h1>
     <strong> Bem vindo ao Cabs!</strong>
-</h2>
+</h1>
+
+<% if @usuario %>
+    <p>Olá, <%= @usuario.username %> </p>
+    <%= button_to "Deslogar", logout_path, method: :delete %>
+<% end %>

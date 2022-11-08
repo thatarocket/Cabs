@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   
   get "/application", to: "application#index"
   post "/usuarios", to: "usuarios#create"
+  delete "/logout", to: "sessions#destroy"
 end

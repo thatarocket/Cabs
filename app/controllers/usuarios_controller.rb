@@ -7,11 +7,13 @@ class UsuariosController < ApplicationController
         @usuario = Usuario.new(usuario_params) 
 
         if @usuario.save
-            redirect_to @usuario
+            session[:user_id] = @usuario.id
+            redirect_to :application, notice: "Usuário criado com sucesso!"
         else
+            flash[:alert] = "Não foi possível criar o usuário!"
             render :new, status: :unprocessable_entity, content_type: "text/html"
             headers["Content-Type"] = "text/html"
-        end        
+        end
     end
 
     def show
