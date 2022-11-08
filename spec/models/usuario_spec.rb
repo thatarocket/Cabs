@@ -4,7 +4,7 @@ RSpec.describe Usuario, type: :model do
   it 'invalido sem nome de usuario' do
     usuario = Usuario.new
     usuario.email = "thaisTeste@gmail.com"
-    usuario.senha = "teste1234"
+    usuario.password = "teste1234"
     expect(usuario).not_to be_valid
   end
 
@@ -16,18 +16,18 @@ RSpec.describe Usuario, type: :model do
   end
 
   it 'invalido sem email' do
-    a = Usuario.new
-    a.username = "thais-teste"
-    a.senha = "teste1234"
-    expect(a).not_to be_valid
+    usuario = Usuario.new
+    usuario.username = "thais-teste"
+    usuario.password = "teste1234"
+    expect(usuario).not_to be_valid
   end
 
   it 'Formato de e-mail inválido!' do
-    a = Usuario.new
-    a.username = "thais-teste"
-    a.senha = "teste1234"
-    a.email = "#,ç/?@@email"    
-    expect(a).not_to be_valid
+    usuario = Usuario.new
+    usuario.username = "thais-teste"
+    usuario.password = "teste1234"
+    usuario.email = "#,ç/?@@email"    
+    expect(usuario).not_to be_valid
   end
   
 

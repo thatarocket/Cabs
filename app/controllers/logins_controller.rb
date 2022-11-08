@@ -3,10 +3,11 @@ class LoginsController < ApplicationController
     end
 
     def create
-        usuario = Usuario.find_by(username: params[:username])
-        if usuario.present? && usuario.authenticate(params[:password])
-            session[:user_id] = usuario.id
-            redirect_to root_path, notice: "Login efetuado com sucesso!"
+        @usuario = Usuario.find_by(username: params[:username])
+
+        if @usuario && @usuario.authenticate(params[:password])
+            session[:user_id] = @usuario.id
+            redirect_to :application, notice: "Login efetuado com sucesso!"
         else
             flash[:alert] = "Username ou senha inválidos!"
             render :new, status: :unprocessable_entity, content_type: "text/html"

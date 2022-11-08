@@ -27,11 +27,16 @@
     <%= form.password_field :password %>
   </p>
 
+   <p>
+    <%= form.label :password_confirmation %><br>
+    <%= form.password_field :password_confirmation %>
+  </p>
+
   <p>
     <%= form.submit 'Salvar novo usuário' %>
   </p>
 
   <p>
-    <%= link_to 'Criar conta', login_path %>
+    <%= link_to 'Fazer login', login_path %>
   </p>
 <% end %>
