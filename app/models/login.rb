@@ -1,4 +1,6 @@
 class Login < ApplicationRecord
+    has_secure_password
+    
     validates :username, presence: { message: "É obrigatório informar o nome de usuário!" }
-    validates :senha, presence: { message: "É obrigatório informar a senha!" }
+    validates :password, presence: { message: "É obrigatório informar a senha!" }
 end

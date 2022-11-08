@@ -59,6 +59,7 @@ group :development, :test do
   gem 'simplecov',      require: false
   gem 'simplecov-lcov', require: false
   gem 'coveralls', require: false
+  gem 'bcrypt'
 
 end
 
