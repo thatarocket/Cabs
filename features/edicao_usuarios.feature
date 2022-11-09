@@ -7,63 +7,65 @@ Como usuário
 Para que eu altere minhas informações de Cadastro
 Eu quero editar meu perfil
 
-Cenário: Edição de usuário com sucesso
+Cenário: edição de usuário com sucesso
 Dado que estou na página de edição de usuário
-Quando substituo o campo "Username" com <username>
-Quando substituo o campo "Email" com <email>
-Quando substituo o campo "Senha" com <senha>
-E clico em salvar novamente
-Então ele deve ter sido salvo no banco de dados no mesmo id
-E eu deverei ver o usuário na página seguinte
+Quando preencho o campo "Username" com <username>
+Quando preencho o campo "Email" com <email>
+Quando preencho o campo "Senha" com <senha>
+E clico em salvar
+Então ele deve ter sido salvo no banco de dados
+E deverei ver o usuário na página de listagem de usuários
 
 Exemplos:
-| username | senha | email |
-| 'thais-teste-novo' | 'teste1234novo' | 'thaisTesteNovo@gmail.com' |
+| username        | senha                     | email                         |
+| 'thais-teste'   | 'teste1234'               | 'thaisTeste@gmail.com'        |
+
 
 Cenário: edição de usuário com erro - sem nome de usuário
 Dado que estou na página de edição de usuário
-Quando substituo o campo "Email" com <email>
-Quando substituo o campo "Senha" com <senha>
-E eu deixo o campo "Username" vazio
-E clico em salvar novamente
-Então eu deverei ver a mensagem de erro "É obrigatório informar o nome de usuário!"
+Quando preencho o campo "Email" com <email>
+Quando preencho o campo "Senha" com <senha>
+E deixo o campo "Username" vazio
+E clico em salvar
+Então deverei ver a mensagem de erro "É obrigatório informar o nome de usuário!"
 
 Exemplos:
-| username | senha | email |
-| '' | 'teste1234novo' | 'thaisTesteNovo@gmail.com' |
+| username        | senha                     | email                         |
+| ''              | 'teste1234'               | 'thaisTeste@gmail.com'        |
+
 
 Cenário: edição de usuário com erro - sem senha
 Dado que estou na página de edição de usuário
-Quando substituo o campo "Username" com <username>
-Quando substituo o campo "Email" com <email>
-E eu deixo o campo "Senha" vazio
-E clico em salvar novamente
-Então eu deverei ver a mensagem de erro "É obrigatório informar a senha!"
+Quando preencho o campo "Username" com <username>
+Quando preencho o campo "Email" com <email>
+E deixo o campo "Senha" vazio
+E clico em salvar
+Então deverei ver a mensagem de erro "É obrigatório informar a senha!"
 
 Exemplos:
-| username | senha | email |
-| 'thais-teste-novo' | '' | 'thaisTesteNovo@gmail.com' |
+| username        | senha                     | email                         |
+| 'thais-teste'   | ''                        | 'thaisTeste@gmail.com'        |
 
 Cenário: edição de usuário com erro - sem email
 Dado que estou na página de edição de usuário
-Quando substituo o campo "Username" com <username>
-Quando substituo o campo "Senha" com <senha>
-E eu deixo o campo "Email" vazio
-E clico em salvar novamente
-Então eu deverei ver a mensagem de erro "É obrigatório informar o email!"
+Quando preencho o campo "Username" com <username>
+Quando preencho o campo "Senha" com <senha>
+E deixo o campo "Email" vazio
+E clico em salvar
+Então deverei ver a mensagem de erro "É obrigatório informar o email!"
 
 Exemplos:
-| username | senha | email |
-| 'thais-teste-novo' | 'teste1234novo' | '' |
+| username        | senha                     | email                         |
+| 'thais-teste'   | 'teste1234'               | ''                            |
 
 Cenário: edição de usuário com erro - email inválido
 Dado que estou na página de edição de usuário
-Quando substituo o campo "Username" com <username>
-Quando substituo o campo "Senha" com <senha>
-E substituo o campo "Email" com <email>
-E clico em salvar novamente
-Então eu deverei ver a mensagem de erro "Formato de e-mail inválido!"
+Quando preencho o campo "Username" com <username>
+Quando preencho o campo "Senha" com <senha>
+E preencho o campo "Email" com <email>
+E clico em salvar
+Então deverei ver a mensagem de erro "Formato de e-mail inválido!"
 
 Exemplos:
-| username | senha | email |
-| 'thais-teste-novo' | 'teste1234novo' | '#,ç/?@@email' |
+| username        | senha                     | email                         |
+| 'thais-teste'   | 'teste1234'               | '#,ç/?@@email'                |

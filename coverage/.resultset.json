@@ -120,7 +120,7 @@
         ]
       }
     },
-    "timestamp": 1667964183
+    "timestamp": 1668000659
   },
   "RSpec": {
     "coverage": {
@@ -150,6 +150,24 @@
         "lines": [
           1,
           1,
+          1,
+          null
+        ]
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/login.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/usuario.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
           1,
           null
         ]
@@ -227,30 +245,8 @@
         ],
         "branches": {
         }
-      },
-      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/login.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/usuario.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1667964245
+    "timestamp": 1668000671
   }
 }
