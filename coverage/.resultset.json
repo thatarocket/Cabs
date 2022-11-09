@@ -88,19 +88,18 @@
           3,
           null,
           3,
-          null,
-          3,
-          0,
-          0,
-          0,
-          null,
-          0,
+          1,
+          1,
           0,
           0,
           null,
+          1,
+          1,
+          1,
           null,
-          3,
-          3,
+          null,
+          2,
+          2,
           null,
           null,
           null,
@@ -111,79 +110,53 @@
           null,
           1,
           1,
-          6,
+          4,
           null,
           null
         ]
       },
       "/myapp/app/models/login.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1667968272
+    "timestamp": 1668024292
   },
   "RSpec": {
     "coverage": {
-      "/myapp/app/helpers/logins_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/myapp/app/helpers/usuarios_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/myapp/app/models/login.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/myapp/app/models/usuario.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
       "/myapp/app/controllers/logins_controller.rb": {
         "lines": [
           0,
           0,
           0,
-          null,
-          0,
-          0,
           0,
           null,
           0,
           0,
+          null,
+          0,
+          null,
           0,
           0,
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
           0,
           0,
           0,
@@ -245,8 +218,68 @@
         ],
         "branches": {
         }
+      },
+      "/myapp/app/helpers/logins_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/myapp/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/myapp/app/models/login.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/myapp/app/models/login2.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/myapp/app/models/usuario.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1667935077
+    "timestamp": 1667969810
   }
 }

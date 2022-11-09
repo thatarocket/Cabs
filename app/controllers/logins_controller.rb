@@ -1,15 +1,14 @@
 class LoginsController < ApplicationController
     def new
-        @login = Usuario.new
+        @login = Login.new
     end
-
+    
     def create
-        @login = Usuario.new(usuario_params)
-
-        @usuario = Usuario.find_by(username: usuario_params[:username])
+        @login = Login.new(usuario_params)
 
         if @login.valid?
-            if @usuario && @usuario.authenticate(usuario_params[:password])
+            @usuario = Usuario.find_by(username: usuario_params[:username])
+            if @usuario.present? && @usuario.authenticate(usuario_params[:password])
                 session[:user_id] = @usuario.id
                 redirect_to :application, notice: "Login efetuado com sucesso!"
             else
@@ -27,7 +26,7 @@ class LoginsController < ApplicationController
         session[:user_id] = nil
         redirect_to root_path, notice: "Deslogado com sucesso!"
     end
-
+    
     private
     def usuario_params
         params.require(:login).permit(:username,:password)

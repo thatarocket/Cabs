@@ -7,7 +7,7 @@
 <% if @login.errors.any? %>
 <div id="error_explanation">
     <h2>
-    <%= @login.errors.count %> erro(s) impedem que o login aconteça:
+    <%= @login.errors.count %> erro(s) impedem que o usuario seja salvo:
     </h2>
     <ul>
     <% @login.errors.full_messages.each do |msg| %>
