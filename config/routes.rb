@@ -8,8 +8,6 @@ Rails.application.routes.draw do
   resources :usuarios
 
   resource :login, only: [:new, :create]
-
-  resources :items
   
   get "/application", to: "application#index"
 end
