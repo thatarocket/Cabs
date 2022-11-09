@@ -11,32 +11,32 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :Nome, style: "display: block" %>
+  <p>
+    <%= form.label :nome %><br>
     <%= form.text_field :nome %>
-  </div>
+  </p>
 
-  <div class="field">
-    <%= form.label :Imagens%>
+  <p class="field">
+    <%= form.label :Imagens %><br>
     <%= form.file_field :images, multiple: true%>
-  </div>
+  </p>
 
-  <div>
-    <%= form.label :Descrição, style: "display: block" %>
+  <p>
+    <%= form.label :Descrição %><br>
     <%= form.text_area :descricao %>
-  </div>
+  </p>
 
-  <div>
-    <%= form.label :Condição,  style: "display: block"%>
+  <p>
+    <%= form.label :condicao %><br>
     <%= form.select :condicao, ["","Novo", "Usado"] %>
-  </div>
+  </p>
 
-  <div>
-    <%= form.label :Categoria, style: "display: block" %>
+  <p>
+    <%= form.label :categoria %><br>
     <%= form.select :categoria, ["","Roupas", "Acessórios", "Sapatos", "Maquiagens","Objetos", "Outros"] %>
-  </div>
+  </p>
 
-  <div>
+  <p>
     <%= form.submit 'Anunciar'%>
-  </div>
+  </p>
 <% end %>

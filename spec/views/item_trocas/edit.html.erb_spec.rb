@@ -19,9 +19,9 @@ RSpec.describe "item_trocas/edit", type: :view do
 
       assert_select "textarea[name=?]", "item_troca[descricao]"
 
-      assert_select "input[name=?]", "item_troca[condicao]"
+      assert_select "select[name=?]", "item_troca[condicao]"
 
-      assert_select "input[name=?]", "item_troca[categoria]"
+      assert_select "select[name=?]", "item_troca[categoria]"
     end
   end
 end
