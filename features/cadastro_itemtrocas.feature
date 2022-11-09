@@ -8,11 +8,11 @@ Eu quero cadastrar um item no banco de dados
 
 Cenário: Cadastro de item com sucesso
 Dado que estou na página de cadastro de item
-Quando preencho o campo “Nome” com “Boné preto”
-Quando preencho o campo “Categoria” com “Acessório”
-Quando preencho o campo “Condição” com “Usado”
+Quando preencho o campo "Nome" com “Boné preto”
+Quando preencho o campo "Categoria" com “Acessório”
+Quando preencho o campo "Condição" com “Usado”
 E clico em “Anunciar”
-Então ele deve ter sido salvo no banco de dados
+Então o item deve ter sido salvo no banco de dados
 E deverei ver a mensagem "O item foi criado com sucesso"
 
 Cenário: Cadastro de item com erro - sem nome

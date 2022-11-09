@@ -1,3 +1,6 @@
+#language: pt
+#encoding: utf-8
+
 Funcionalidade: Excluir Item
 Como usuário
 Para que tire meu item do ar

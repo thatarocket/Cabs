@@ -1,3 +1,6 @@
+#language: pt
+#encoding: utf-8
+
 Funcionalidade: Editar item
 Como usuário
 Para que eu possa alterar informações do item que cadastrei
@@ -11,7 +14,7 @@ Quando mudo o campo “Nome” para  “Boné preto”
 Quando mudo o campo “Categoria” para “Acessório”
 Quando mudo o campo “Condição” para  “Usado”
 E clico em “Anunciar”
-Então ele deve ter sido alterado no banco de dados
+Então o item deve ter sido alterado no banco de dados
 E deverei ver a mensagem "O item foi atualizado com sucesso."
 
 Cenário: Edição de item com erro - sem nome
