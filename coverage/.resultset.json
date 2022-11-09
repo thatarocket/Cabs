@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/myapp/app/controllers/usuarios_controller.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/usuarios_controller.rb": {
         "lines": [
           1,
           1,
@@ -45,19 +45,19 @@
           null
         ]
       },
-      "/myapp/app/helpers/logins_helper.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/logins_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/helpers/usuarios_helper.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/usuarios_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/models/usuario.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/usuario.rb": {
         "lines": [
           1,
           1,
@@ -67,7 +67,25 @@
           null
         ]
       },
-      "/myapp/app/controllers/logins_controller.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/item.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/items_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/logins_controller.rb": {
         "lines": [
           1,
           1,
@@ -93,7 +111,7 @@
           null
         ]
       },
-      "/myapp/app/models/login.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/login.rb": {
         "lines": [
           1,
           1,
@@ -102,6 +120,137 @@
         ]
       }
     },
-    "timestamp": 1666898990
+    "timestamp": 1667964183
+  },
+  "RSpec": {
+    "coverage": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/logins_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/items_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/item.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/logins_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/usuarios_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/login.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/usuario.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1667964245
   }
 }
