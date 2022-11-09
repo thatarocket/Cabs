@@ -13,11 +13,11 @@ Quando preencho o campo "Email" com <email>
 Quando preencho o campo "Password" com <password>
 E clico em salvar
 Então ele deve ter sido salvo no banco de dados
-E deverei ver o usuário na página de listagem de usuários
+E devo conseguir ter acesso ao sistema
 
 Exemplos:
-| username        | password                     | email                         |
-| 'thais-teste'   | 'teste1234'               | 'thaisTeste@gmail.com'        |
+| username        | password                   | email                         |
+| 'thais-teste'   | 'teste1234'                 | 'thaisTeste@gmail.com'        |
 
 
 Cenário: Cadastro de usuário com erro - sem nome de usuário

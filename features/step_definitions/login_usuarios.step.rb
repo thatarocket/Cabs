@@ -7,6 +7,6 @@ Quando('clico em entrar') do
 end
   
 Então('devo conseguir ter acesso ao sistema') do
-    visit 'application/index'
+    visit '/application'
     expect(page).to have_content('Bem vindo ao Cabs!')
 end

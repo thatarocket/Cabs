@@ -28,7 +28,7 @@ class UsuariosController < ApplicationController
         @usuario = Usuario.find(params[:id])
     
         if @usuario.update(usuario_params)
-            redirect_to @usuario
+            redirect_to :application
         else
             render :edit, status: :unprocessable_entity, content_type: "text/html"
             headers["Content-Type"] = "text/html"
