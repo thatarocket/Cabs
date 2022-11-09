@@ -1,8 +1,9 @@
 # email:string
 # password_digest:string
 # username:string
-
 # password:string virtual
+# password_confirmation:string virtual
+
 class Usuario < ApplicationRecord
     has_secure_password
 
