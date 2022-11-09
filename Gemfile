@@ -61,6 +61,7 @@ group :development, :test do
   gem 'coveralls', require: false
   gem 'bcrypt'
   gem 'debug'
+  gem "factory_bot_rails"
 
 end
 
