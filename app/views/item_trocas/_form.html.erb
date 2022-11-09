@@ -1,0 +1,42 @@
+<%= form_with(model: item_troca) do |form| %>
+  <% if item_troca.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(item_troca.errors.count, "error") %> prohibited this item_troca from being saved:</h2>
+
+      <ul>
+        <% item_troca.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= form.label :nome %><br>
+    <%= form.text_field :nome %>
+  </p>
+
+  <p class="field">
+    <%= form.label :Imagens %><br>
+    <%= form.file_field :images, multiple: true%>
+  </p>
+
+  <p>
+    <%= form.label :Descrição %><br>
+    <%= form.text_area :descricao %>
+  </p>
+
+  <p>
+    <%= form.label :condicao %><br>
+    <%= form.select :condicao, ["","Novo", "Usado"] %>
+  </p>
+
+  <p>
+    <%= form.label :categoria %><br>
+    <%= form.select :categoria, ["","Roupas", "Acessórios", "Sapatos", "Maquiagens","Objetos", "Outros"] %>
+  </p>
+
+  <p>
+    <%= form.submit 'Anunciar'%>
+  </p>
+<% end %>

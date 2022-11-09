@@ -1,6 +1,109 @@
 {
   "Cucumber Features": {
     "coverage": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/controllers/item_trocas_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          9,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          9,
+          null,
+          9,
+          9,
+          12,
+          6,
+          null,
+          6,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          4,
+          4,
+          2,
+          1,
+          null,
+          6,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          16,
+          null,
+          null,
+          null,
+          1,
+          13,
+          null,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/ESI/Cabs/app/helpers/item_trocas_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/ESI/Cabs/app/helpers/logins_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/ESI/Cabs/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/ESI/Cabs/app/models/item_troca.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/guilhermesena/code/ESI/Cabs/app/controllers/usuarios_controller.rb": {
         "lines": [
           1,
@@ -42,18 +145,6 @@
           1,
           15,
           null,
-          null
-        ]
-      },
-      "/Users/guilhermesena/code/ESI/Cabs/app/helpers/logins_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/guilhermesena/code/ESI/Cabs/app/helpers/usuarios_helper.rb": {
-        "lines": [
-          1,
           null
         ]
       },
@@ -102,6 +193,206 @@
         ]
       }
     },
-    "timestamp": 1667327497
+    "timestamp": 1668025383
+  },
+  "RSpec": {
+    "coverage": {
+      "/Users/guilhermesena/code/ESI/Cabs/app/helpers/item_trocas_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/ESI/Cabs/app/helpers/logins_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/ESI/Cabs/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/ESI/Cabs/app/models/item_troca.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/ESI/Cabs/app/models/login.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/ESI/Cabs/app/models/usuario.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/ESI/Cabs/app/controllers/item_trocas_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/ESI/Cabs/app/controllers/logins_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/guilhermesena/code/ESI/Cabs/app/controllers/usuarios_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1668026087
   }
 }
