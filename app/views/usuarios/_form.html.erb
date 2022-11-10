@@ -4,16 +4,16 @@
 
 <body>
   <% if @usuario.errors.any? %>
-  <div id="error_explanation">
-      <h2>
-      <%= @usuario.errors.count %> erro(s) impedem que o usuario seja salvo:
-      </h2>
-      <ul>
-      <% @usuario.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-      <% end %>
-      </ul>
-  </div>
+    <div id="error_explanation">
+        <h2>
+        <%= @usuario.errors.count %> erro(s) impedem que o usuario seja salvo:
+        </h2>
+        <ul>
+        <% @usuario.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+        </ul>
+    </div>
   <% end %>
   <%= form_with model: usuario do |form| %>
     <p>

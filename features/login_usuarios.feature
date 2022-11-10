@@ -8,7 +8,6 @@ Eu quero realizar o login
 
 Cenário: Login de usuário com sucesso
 Dado que estou na página de login do usuário
-Dado que existe um usuário
 Quando preencho o campo "Username" com <username>
 Quando preencho o campo "Password" com <password>
 E clico em entrar
@@ -20,7 +19,6 @@ Exemplos:
 
 Cenário: Login de usuário com erro - sem senha
 Dado que estou na página de login do usuário
-Dado que existe um usuário
 Quando preencho o campo "Username" com <username>
 E deixo o campo "Password" vazio
 E clico em entrar
@@ -32,7 +30,6 @@ Exemplos:
 
 Cenário: Login de usuário com erro - sem nome de usuário
 Dado que estou na página de login do usuário
-Dado que existe um usuário
 Quando preencho o campo "Password" com <password>
 E deixo o campo "Username" vazio
 E clico em entrar
