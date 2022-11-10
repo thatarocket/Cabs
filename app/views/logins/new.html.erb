@@ -1,40 +1,55 @@
-<h1>Login do usuário</h1>
+<head>
+  <meta charset="UTF-8">
+  <%= stylesheet_link_tag "login", "data-turbo-track": "reload" %>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
 
-<% flash.each do |nome, mensagem| %>
-  <%= content_tag :div, mensagem, class: nome %>
-<% end %>
+<body>
+  <% flash.each do |nome, mensagem| %>
+    <%= content_tag :div, mensagem, class: nome %>
+  <% end %>
 
-<% if @login.errors.any? %>
-<div id="error_explanation">
-    <h2>
-    <%= @login.errors.count %> erro(s) impedem que o usuario seja salvo:
-    </h2>
-    <ul>
-    <% @login.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-    <% end %>
-    </ul>
-</div>
-<% end %>
+  <% if @login.errors.any? %>
+  <div id="error_explanation">
+      <h2>
+      <%= @login.errors.count %> erro(s) impedem que o usuario seja salvo:
+      </h2>
+      <ul>
+      <% @login.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+      <% end %>
+      </ul>
+  </div>
+  <% end %>
 
-<%= form_with scope: :login, url: login_path, local: true do |form| %>
+  <div class="container">
+    <div class="card">
+      <h1 class="card-title">Login do <span class="color-red">Cabs</span>!</h1>
+      <%= form_with scope: :login, url: login_path, local: true do |form| %>
+        <div class="user-input">
+          <p>
+            <%= form.label :username %><br>
+            <%= form.text_field :username, placeholder: "username", class:"card-input" %>
+          </p>
+            
+          <p>
+            <%= form.label :password %><br>
+            <%= form.password_field :password, placeholder: "password", class:"card-input" %>
+          </p>
+        </div>
 
-  <p>
-    <%= form.label :username %><br>
-    <%= form.text_field :username, placeholder: "username" %>
-  </p>
- 
-  <p>
-    <%= form.label :password %><br>
-    <%= form.password_field :password, placeholder: "password" %>
-  </p>
+        <p>
+          <%= form.submit 'Realizar login',class:"card-btn" %>
+        </p>
 
-  <p>
-    <%= form.submit 'Realizar login' %>
-  </p>
+        <div class="card-footer">
+          Não tem uma conta? <%= link_to 'Criar conta', new_usuario_path,class:"color-purple" %>
+        </div>  
+      <% end %>
+    </div>
+    <%= image_tag("people.svg", :alt => "image people login", class: "image-people" )%>
+  </div>
+</body>
 
-  <p>
-    <%= link_to 'Criar conta', new_usuario_path %>
-  </p>
-
-<% end %>
