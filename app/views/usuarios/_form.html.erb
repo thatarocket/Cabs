@@ -1,33 +1,47 @@
-<% if @usuario.errors.any? %>
-<div id="error_explanation">
-    <h2>
-    <%= @usuario.errors.count %> erro(s) impedem que o usuario seja salvo:
-    </h2>
-    <ul>
-    <% @usuario.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-    <% end %>
-    </ul>
-</div>
-<% end %>
+<head>
+  <meta charset="UTF-8">
+</head>
 
-<%= form_with model: usuario do |form| %>
-  <p>
-    <%= form.label :username %><br>
-    <%= form.text_field :username %>
-  </p>
- 
-  <p>
-    <%= form.label :email %><br>
-    <%= form.text_field :email %>
-  </p>
+<body>
+  <% if @usuario.errors.any? %>
+    <div id="error_explanation">
+        <h2>
+        <%= @usuario.errors.count %> erro(s) impedem que o usuario seja salvo:
+        </h2>
+        <ul>
+        <% @usuario.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+        </ul>
+    </div>
+  <% end %>
+  <%= form_with model: usuario do |form| %>
+    <p>
+      <%= form.label :username %><br>
+      <%= form.text_field :username %>
+    </p>
+  
+    <p>
+      <%= form.label :email %><br>
+      <%= form.text_field :email %>
+    </p>
 
-  <p>
-    <%= form.label :senha %><br>
-    <%= form.text_field :senha %>
-  </p>
+    <p>
+      <%= form.label :password %><br>
+      <%= form.password_field :password %>
+    </p>
 
-  <p>
-    <%= form.submit 'Salvar novo usuário' %>
-  </p>
-<% end %>
+    <p>
+      <%= form.label :password_confirmation %><br>
+      <%= form.password_field :password_confirmation %>
+    </p>
+
+    <p>
+      <%= form.submit 'Salvar novo usuário' %>
+    </p>
+
+    <p>
+      <%= link_to 'Fazer login', login_path %>
+    </p>
+  <% end %>
+</body>

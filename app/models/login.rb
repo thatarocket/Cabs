@@ -1,4 +1,10 @@
+# password_digest:string
+# username:string
+# password:string virtual
+
 class Login < ApplicationRecord
-    validates :username, presence: { message: "É obrigatório informar o nome de usuário!" }
-    validates :senha, presence: { message: "É obrigatório informar a senha!" }
+    has_secure_password
+    
+    validates :username, presence: { message: "É obrigatório informar o nome de usuário!" },uniqueness: true
+    validates :password, presence: { message: "É obrigatório informar a senha!" }
 end

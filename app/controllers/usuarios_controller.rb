@@ -7,11 +7,13 @@ class UsuariosController < ApplicationController
         @usuario = Usuario.new(usuario_params) 
 
         if @usuario.save
-            redirect_to @usuario
+            session[:user_id] = @usuario.id
+            redirect_to :application, notice: "Usuário criado com sucesso!"
         else
+            flash[:alert] = "Não foi possível criar o usuário!"
             render :new, status: :unprocessable_entity, content_type: "text/html"
             headers["Content-Type"] = "text/html"
-        end        
+        end
     end
 
     def show
@@ -26,7 +28,7 @@ class UsuariosController < ApplicationController
         @usuario = Usuario.find(params[:id])
     
         if @usuario.update(usuario_params)
-            redirect_to @usuario
+            redirect_to :application
         else
             render :edit, status: :unprocessable_entity, content_type: "text/html"
             headers["Content-Type"] = "text/html"
@@ -35,6 +37,6 @@ class UsuariosController < ApplicationController
 
     private
     def usuario_params
-        params.require(:usuario).permit(:username,:email,:senha)
+        params.require(:usuario).permit(:username,:email,:password)
     end
 end

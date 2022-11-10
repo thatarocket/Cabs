@@ -14,12 +14,7 @@ Então('ele deve ter sido salvo no banco de dados') do
   usuario = Usuario.order("id").last
   expect(usuario.username).to eq('thais-teste') 
   expect(usuario.email).to eq('thaisTeste@gmail.com') 
-  expect(usuario.senha).to eq('teste1234')
-end
-
-Então('deverei ver o usuário na página de listagem de usuários') do
-  expect(page).to have_content('thais-teste')
-  expect(page).to have_content('thaisTeste@gmail.com')
+  expect(usuario.password_digest).not_to be_nil
 end
 
 Quando('deixo o campo {string} vazio') do |string|
