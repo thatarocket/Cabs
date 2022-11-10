@@ -2,9 +2,9 @@ Dado('que estou na página de login do usuário') do
     visit '/login/new'
 end
   
-# Dado('que existe um usuário') do
-#     FactoryBot.create(:user)
-# end
+Dado('que existe um usuário') do
+    FactoryBot.create(:usuario)
+end
 
 Quando('clico em entrar') do
     click_on 'Realizar login'

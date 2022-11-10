@@ -1,6 +1,109 @@
 {
   "Cucumber Features": {
     "coverage": {
+      "/myapp/app/controllers/item_trocas_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          9,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          9,
+          null,
+          9,
+          9,
+          12,
+          6,
+          null,
+          6,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          4,
+          4,
+          2,
+          1,
+          null,
+          6,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          16,
+          null,
+          null,
+          null,
+          1,
+          13,
+          null,
+          null
+        ]
+      },
+      "/myapp/app/helpers/item_trocas_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/myapp/app/helpers/logins_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/myapp/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/myapp/app/models/item_troca.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/myapp/app/controllers/usuarios_controller.rb": {
         "lines": [
           1,
@@ -47,18 +150,6 @@
           null
         ]
       },
-      "/myapp/app/helpers/logins_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/myapp/app/helpers/usuarios_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/myapp/app/models/usuario.rb": {
         "lines": [
           null,
@@ -90,12 +181,12 @@
           3,
           1,
           1,
-          0,
-          0,
+          1,
+          1,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null,
           2,
@@ -110,7 +201,7 @@
           null,
           1,
           1,
-          4,
+          5,
           null,
           null
         ]
@@ -130,7 +221,7 @@
         ]
       }
     },
-    "timestamp": 1668039831
+    "timestamp": 1668046795
   },
   "RSpec": {
     "coverage": {
