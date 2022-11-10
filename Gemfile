@@ -40,7 +40,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 gem 'pg'
-
+gem 'bcrypt'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -59,7 +59,6 @@ group :development, :test do
   gem 'simplecov',      require: false
   gem 'simplecov-lcov', require: false
   gem 'coveralls', require: false
-  gem 'bcrypt'
   gem "factory_bot_rails"
 
 end
