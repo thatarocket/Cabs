@@ -1,0 +1,41 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Itens</h1>
+
+<div id="item_trocas">
+  <% @item_trocas.each do |item_troca| %>
+    <p>
+      <strong>Nome</strong>
+      <%= item_troca.nome %>
+    </p>
+
+    <p>
+      <strong>Imagens</strong>
+      <%= item_troca.images.each do |image| %>
+        <div style="width:250px; height:250px;">
+          <%= image_tag(image, style:"width:100%; height: auto;")  %>
+        </div>
+      <% end %>
+    </p>
+
+    <p>
+      <strong>Descrição</strong>
+      <%= item_troca.descricao %>
+    </p>
+
+    <p>
+      <strong>Condição</strong>
+      <%= item_troca.condicao %>
+    </p>
+
+    <p>
+      <strong>Categoria</strong>
+      <%= item_troca.categoria %>
+    </p>
+    <p>
+      <%= link_to "Abrir este item", item_troca %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Anunciar novo item", new_item_troca_path %>
