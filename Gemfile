@@ -41,6 +41,10 @@ gem "bootsnap", require: false
 
 gem 'pg'
 gem 'bcrypt'
+# database_cleaner is not required, but highly recommended
+gem 'database_cleaner'
+# Use sqlite3 as the database for Active Record
+gem "sqlite3", "~> 1.4"
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -52,10 +56,6 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'rspec-rails'
   gem 'cucumber-rails', require: false
-  # database_cleaner is not required, but highly recommended
-  gem 'database_cleaner'
-  # Use sqlite3 as the database for Active Record
-  gem "sqlite3", "~> 1.4"
   gem 'simplecov',      require: false
   gem 'simplecov-lcov', require: false
   gem 'coveralls', require: false
