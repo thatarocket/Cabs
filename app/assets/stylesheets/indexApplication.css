@@ -1,0 +1,77 @@
+body {  
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+} 
+
+
+/* Navbar */
+
+.topnav {
+    background-color: rgb(228, 228, 228);
+    height: 45px;
+    border-bottom: 2px solid #E5E5E5;
+    display: flex;
+    width: 100%;
+}
+
+.topnav a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #4A4A4A;
+    font-weight: medium; 
+}
+  
+.topnav a:hover {
+    color: #FF2525;
+    text-decoration: none;
+}
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+    color: #FF2525;
+}
+
+#cabsNav { 
+    font-size: 22px;
+    color: #FF2525; 
+} 
+
+#cabsNav:hover { 
+    font-size: 22px;
+    color: #f88787; 
+} 
+
+/* Form Search */
+
+.formSearch {
+    margin: 10px 10px 0 auto;
+    justify-content: flex-end;    
+}
+
+.searchInput {
+    border-radius: 5px;
+    border: 1px solid #ff919e;
+    size: 30px;
+    padding: 6px;
+}
+
+.BtnSearch {
+    border-radius: 5px;
+    border: none;
+    size: 20px;
+    background-color: #FF2525;
+    color: black;
+    padding: 6px;
+} 
+
+.BtnSearch:hover {
+    color: #fff;
+    
+} 
+
+/* Rest of page */
+
+/* Title page */
+

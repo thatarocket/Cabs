@@ -1,13 +1,32 @@
 <head>
     <meta charset="UTF-8">
+    <%= stylesheet_link_tag "indexApplication", "data-turbo-track": "reload" %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <nav class="topnav">
+        <a id="cabsNav" href="/application">Cabs</a>
+        <a href="/application">Início</a>
+        <a href="#">Item</a>
+        <a href="#">Perfil</a>
+        <div class="topnav-right">
+            <form class="formSearch">
+                <input type="search" placeholder="pesquisar" class="searchInput">
+                <button type="submit" class="BtnSearch">buscar</button>
+            </form>
+        </div>   
+    </nav> 
+
     <h1>
         <strong> Bem vindo ao Cabs!</strong>
     </h1>
+
     <% if @usuario %>
         <p>Olá, <%= @usuario.username %> </p>
         <%= button_to "Deslogar", logout_path, method: :delete %>
     <% end %>
+    
 </body>

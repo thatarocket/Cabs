@@ -1,0 +1,32 @@
+<head>
+  <meta charset="UTF-8">
+  <%= stylesheet_link_tag "buscar", "data-turbo-track": "reload" %>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <% flash.each do |nome, mensagem| %>
+    <%= content_tag :div, mensagem, class: nome %>
+  <% end %>
+
+  <% if @login.errors.any? %>
+  <div id="error_explanation">
+      <h2>
+      <%= @login.errors.count %> erro(s) impedem que o usuario seja salvo:
+      </h2>
+      <ul>
+      <% @login.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+      <% end %>
+      </ul>
+  </div>
+  <% end %>
+
+  
+
+
+  
+</body>
+
