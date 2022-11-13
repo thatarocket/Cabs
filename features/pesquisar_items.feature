@@ -23,7 +23,7 @@ Dado que estou na página de início
 Dado que exista um item cadastrado
 Quando deixo o campo "item" vazio
 E clico em pesquisar
-Então deverei ver a mensagem de erro "Nenhum resultado encontrado"
+Então deverei ver na página "Nenhum resultado encontrado"
 
 Exemplos:
 | item             |

@@ -3,7 +3,7 @@ Dado('que estou na página de início') do
 end
   
 Dado('que exista um item cadastrado') do
-    FactoryBot.create(:item)
+    FactoryBot.create(:item_troca)
 end
   
 Quando('clico em pesquisar') do
