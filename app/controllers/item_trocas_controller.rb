@@ -10,6 +10,10 @@ class ItemTrocasController < ApplicationController
   def show
   end
 
+  def search
+    
+  end
+
   # GET /item_trocas/new
   def new
     @item_troca = ItemTroca.new
