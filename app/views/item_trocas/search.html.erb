@@ -18,10 +18,10 @@
   <% else %>
     <p class="subtitleResult"> <%= @pesquisa.count %> resultados encontrados <br>
     <div class="container">
-      <%= @pesquisa.each do |result| %>
+      <% @pesquisa.each do |result| %>
         <div class="card">
           <%= link_to result.nome, item_troca_path(result.id), class:"card-title" %>
-          <%= result.images.each do |image| %>
+          <% result.images.each do |image| %>
             <div style="width:150px; height:150px;">
               <%= image_tag(image, style:"width:100%; height: auto;")  %>
             </div>
