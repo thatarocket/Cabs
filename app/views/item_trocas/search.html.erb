@@ -11,19 +11,29 @@
     <%= content_tag :div, mensagem, class: nome %>
   <% end %>
 
-  <h1 class="titlePage">Resultados da pesquisa por " <%= params[:q] %> " </h1>
+  <h3 class="titlePage">Resultados da pesquisa por " <%= params[:q] %> " </h3>
   
   <% if @pesquisa.empty? %>
-    <p>Nenhum resultado encontrado</p>
+    <p class="subtitleResult">Nenhum resultado encontrado</p>
   <% else %>
-    <p> <%= @pesquisa.count %> resultados encontrados <br>
-    <%= @pesquisa.each do |result| %>
-      <p> <%= link_to result.nome, item_troca_path(result.id), class:"resultName" %> </p> <br> 
-    <% end %>
+    <p class="subtitleResult"> <%= @pesquisa.count %> resultados encontrados <br>
+    <div class="container">
+      <%= @pesquisa.each do |result| %>
+        <div class="card">
+          <%= link_to result.nome, item_troca_path(result.id), class:"card-title" %>
+          <%= result.images.each do |image| %>
+            <div style="width:150px; height:150px;">
+              <%= image_tag(image, style:"width:100%; height: auto;")  %>
+            </div>
+          <% end %>
+          <ul class="card-text">             
+            <li> <b> Condição: </b> <%= result.condicao %> </li>
+            <li> <b> Descrição: </b> <%= result.descricao %> </li>           
+          </ul>
+        </div>
+      <% end %>
+    </div>
   <% end %>
-  
-  
 
-  
 </body>
 
