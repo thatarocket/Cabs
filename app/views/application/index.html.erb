@@ -7,18 +7,16 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <nav class="navbar">
         <a id="cabsNav" href="/application">Cabs</a>
         <a href="/application">Início</a>
         <a href="#">Item</a>
         <a href="#">Perfil</a>
-        <div class="topnav-right">
-            <form class="formSearch">
-                <input type="search" placeholder="pesquisar" class="searchInput">
-                <button type="submit" class="BtnSearch">buscar</button>
-            </form>
-        </div>   
-    </div> 
+        <form class="formSearch" action="/search">
+            <input name="q" type="search" placeholder="pesquisar" class="searchInput">
+            <button type="submit" class="BtnSearch">buscar</button>
+        </form>  
+    </nav> 
 
     <h1>
         <strong> Bem vindo ao Cabs!</strong>

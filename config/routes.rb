@@ -17,6 +17,6 @@ Rails.application.routes.draw do
   post "login", to: "logins#create"
 
   # Pesquisa
-  get "/item_trocas/search", to: "item_trocas#search"
+  get "/search", to: "item_trocas#search"
 
 end

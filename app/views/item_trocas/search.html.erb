@@ -11,21 +11,22 @@
     <%= content_tag :div, mensagem, class: nome %>
   <% end %>
 
-  <% if @login.errors.any? %>
-  <div id="error_explanation">
-      <h2>
-      <%= @login.errors.count %> erro(s) impedem que o usuario seja salvo:
-      </h2>
-      <ul>
-      <% @login.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-      <% end %>
-      </ul>
-  </div>
-  <% end %>
-
+  <h1>Resultados da pesquisa</h1>
   
-
+  <% if @pesquisa.empty? %>
+    <p>Nenhum item encontrado</p>
+  <% else %>
+    <%= @pesquisa.each do |result| %>
+      <%= result.nome %> <br>
+      <%= @item_troca.images.each do |image| %>
+        <div style="width:250px; height:250px;">
+          <%= image_tag(image, style:"width:100%; height: auto;")  %>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+  
+  
 
   
 </body>
