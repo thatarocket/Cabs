@@ -1,6 +1,6 @@
 <head>
   <meta charset="UTF-8">
-  <%= stylesheet_link_tag "buscar", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag "search", "data-turbo-track": "reload" %>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
@@ -11,18 +11,14 @@
     <%= content_tag :div, mensagem, class: nome %>
   <% end %>
 
-  <h1>Resultados da pesquisa</h1>
+  <h1 class="titlePage">Resultados da pesquisa por "<%= params[:q] %>" </h1>
   
   <% if @pesquisa.empty? %>
     <p>Nenhum item encontrado</p>
   <% else %>
+    <p> <%= @pesquisa.count %> resultados encontrados <br>
     <%= @pesquisa.each do |result| %>
-      <%= result.nome %> <br>
-      <%= @item_troca.images.each do |image| %>
-        <div style="width:250px; height:250px;">
-          <%= image_tag(image, style:"width:100%; height: auto;")  %>
-        </div>
-      <% end %>
+      <p> <%= link_to result.nome, item_troca_path(result.id), class:"resultName" %> </p> <br> 
     <% end %>
   <% end %>
   
