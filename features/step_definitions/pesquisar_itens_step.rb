@@ -19,5 +19,5 @@ Então('deverei ver na página {string}') do |string|
 end
 
 Então('deverei ver o item na página de resultados') do
-    expect(page).to have_content(Item.last.nome)
+    expect(page).to have_content(ItemTroca.last.nome)
 end
