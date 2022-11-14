@@ -11,7 +11,7 @@
     <%= content_tag :div, mensagem, class: nome %>
   <% end %>
 
-  <h3 class="titlePage">Resultados da pesquisa por " <%= params[:q] %> " </h3>
+  <h3 class="titlePage">Resultados da pesquisa por "<%= params[:q] %>" </h3>
   
   <% if @pesquisa.empty? %>
     <p class="subtitleResult">Nenhum resultado encontrado</p>
