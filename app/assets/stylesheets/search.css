@@ -9,6 +9,10 @@ body {
     font-size: 1.2rem;
 }
 
+.searchResults {
+    margin-left: 18px;
+}
+
 /* Titulo e subtitulo resultado */
 
 .titlePage {

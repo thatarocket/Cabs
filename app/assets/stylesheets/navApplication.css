@@ -1,0 +1,70 @@
+body {  
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+} 
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar a {
+    text-align: center;
+    padding: 0 1rem;
+    text-decoration: none;
+    font-size: 17px;
+    color: #4A4A4A;
+    font-weight: medium; 
+}
+
+.navbar a:hover {
+    color: #FF2525;
+    text-decoration: none;
+}
+  
+#cabsNav { 
+    color: #FF2525; 
+    font-weight: bold;
+} 
+
+form {
+    margin: 0;
+}
+
+.formSearch {
+    margin-left: auto; 
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInput {
+    border-radius: 5px;
+    border: 1px solid #ff919e;
+    size: 30px;
+    padding: 6px;
+}
+
+.BtnSearch {
+    border-radius: 5px;
+    border: none;
+    size: 20px;
+    background-color: #FF2525;
+    color: black;
+    padding: 6px;
+} 
+
+.BtnSearch:hover {
+    color: #fff;    
+} 
