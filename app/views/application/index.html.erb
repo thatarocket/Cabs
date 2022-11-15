@@ -8,6 +8,6 @@
     </h1>
     <% if @usuario %>
         <p>Olá, <%= @usuario.username %> </p>
-        <%= button_to "Deslogar", logout_path, method: :delete %>
+        <%= button_to "deslogar", logout_path, method: :delete %>
     <% end %>
 </body>
