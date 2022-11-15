@@ -10,6 +10,14 @@ class ItemTrocasController < ApplicationController
   def show
   end
 
+  def search
+    if params[:q].blank?
+      @pesquisa = ''
+    else
+      @pesquisa = ItemTroca.where("nome LIKE ?", "%" + params[:q] + "%")
+    end
+  end
+
   # GET /item_trocas/new
   def new
     @item_troca = ItemTroca.new
