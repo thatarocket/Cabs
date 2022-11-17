@@ -15,7 +15,4 @@ Então('devo conseguir ter acesso ao sistema') do
     expect(page).to have_content('Bem vindo ao Cabs!')
 end
 
-Então('deverei ver na página {string}') do |string|
-    expect(page).to have_content(string)
-end
 
