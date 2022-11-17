@@ -7,7 +7,7 @@
 
 <p>
   <strong>Imagens</strong>
-  <%= @item_troca.images.each do |image| %>
+  <% @item_troca.images.each do |image| %>
     <div style="width:250px; height:250px;">
       <%= image_tag(image, style:"width:100%; height: auto;")  %>
     </div>
