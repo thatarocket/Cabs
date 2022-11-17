@@ -31,5 +31,10 @@
 
 /public/assets
 
+# Ignore uploaded files in coverage.
+coverage/.last_run.json
+coverage/.resultset.json
+coverage/index.html
+
 # Ignore master key for decrypting credentials and more.
 /config/master.key
