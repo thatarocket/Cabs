@@ -3,7 +3,7 @@ Dado('que estou na página de login do usuário') do
 end
   
 Dado('que existe um usuário') do
-    FactoryBot.create(:usuario)
+    @usuario = FactoryBot.create(:usuario)
 end
 
 Quando('clico em entrar') do
@@ -14,4 +14,5 @@ Então('devo conseguir ter acesso ao sistema') do
     visit '/application'
     expect(page).to have_content('Bem vindo ao Cabs!')
 end
+
 

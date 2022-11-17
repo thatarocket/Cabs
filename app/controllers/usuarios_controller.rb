@@ -16,9 +16,9 @@ class UsuariosController < ApplicationController
         end
     end
 
-    def show
-        @usuario = Usuario.find(params[:id])
-    end
+    # def show
+    #     @usuario = Usuario.find(params[:id])
+    # end
 
     def edit
         @usuario = Usuario.find(params[:id])
