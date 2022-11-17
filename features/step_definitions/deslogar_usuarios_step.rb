@@ -7,7 +7,7 @@ Dado('clico em deslogar') do
 end
   
 Então('deverei ver a página de login') do
-    visit root_path
+    expect(page).to have_selector(:link_or_button, 'Realizar login')
 end
 
 Dado('que ele está logado') do
