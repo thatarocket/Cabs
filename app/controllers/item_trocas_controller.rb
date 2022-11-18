@@ -14,7 +14,7 @@ class ItemTrocasController < ApplicationController
     if params[:q].blank?
       @pesquisa = ''
     else
-      @pesquisa = ItemTroca.where("nome LIKE ?", "%" + params[:q] + "%")
+      @pesquisa = ItemTroca.where("LOWER(nome) LIKE ?", "%" + params[:q] + "%")
     end
   end
 
