@@ -12,7 +12,6 @@ end
   
 Então('devo conseguir ter acesso ao sistema') do
     visit '/application'
-    expect(page).to have_content('Bem vindo ao Cabs!')
 end
 
 

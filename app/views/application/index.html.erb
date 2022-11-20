@@ -8,14 +8,177 @@
 
 <body>
     <%= render template: "application/nav" %>
+    
+    <div class="header">
+        
+        <div class="headerLinks">
+            <%= link_to "Roupas", "#roupas", class:"categoryLink" %>
+            <%= link_to "Acessórios", "#acessorios", class:"categoryLink" %>
+            <%= link_to "Sapatos", "#sapatos", class:"categoryLink" %>
+            <%= link_to "Maquiagens", "#maquiagens", class:"categoryLink" %>
+            <%= link_to "Objetos", "#objetos", class:"categoryLink" %>
+            <%= link_to "Outros", "#outros", class:"categoryLink" %>
+        </div>
 
-    <h1>
-        <strong> Bem vindo ao Cabs!</strong>
-    </h1>
+        <div class="userOptions">
+            <% if @usuario %>
+                <p class="helloUser"> Olá, <%= @usuario.username %> </p>
+                <%= button_to "deslogar", logout_path, class:"deslogarBtn", method: :delete %>
+            <% end %>
+        </div>
+    </div>
 
-    <% if @usuario %>
-        <p>Olá, <%= @usuario.username %> </p>
-        <%= button_to "deslogar", logout_path, method: :delete %>
-    <% end %>
+    <%# Roupas %>
+    <section id="roupas" class="categories">
+        <p> Roupas </p>
+        <% if @clothes.present? %>
+            <div class="container">
+                <% @clothes.each do |result| %>
+                    <div class="card">
+                        <%= link_to result.nome, item_troca_path(result.id), class:"card-title" %>
+                        <% result.images.each do |image| %>
+                            <div style="width:150px; height:150px;">
+                                <%= image_tag(image, style:"width:100%; height: auto;")  %>
+                            </div>
+                        <% end %>
+                        <ul class="card-text">             
+                            <li> <b> Condição: </b> <%= result.condicao %> </li>
+                            <li> <b> Descrição: </b> <%= result.descricao %> </li>           
+                        </ul>
+                    </div>
+                <% end %>
+            </div>
+        <% else %>
+            <p class="noItems"> Não há itens cadastrados </p>
+        <% end %>
+
+    </section>
+
+    <%# Acessórios %>
+    <section id="acessorios" class="categories">
+        <p> Acessórios </p>
+        <% if @acessories.present? %>
+            <div class="container">
+                <% @acessories.each do |result| %>
+                    <div class="card">
+                        <%= link_to result.nome, item_troca_path(result.id), class:"card-title" %>
+                        <% result.images.each do |image| %>
+                            <div style="width:150px; height:150px;">
+                                <%= image_tag(image, style:"width:100%; height: auto;")  %>
+                            </div>
+                        <% end %>
+                        <ul class="card-text">             
+                            <li> <b> Condição: </b> <%= result.condicao %> </li>
+                            <li> <b> Descrição: </b> <%= result.descricao %> </li>           
+                        </ul>
+                    </div>
+                <% end %>
+            </div>
+        <% else %>
+            <p class="noItems"> Não há itens cadastrados </p>
+        <% end %>
+    </section>
+
+    <%# Sapatos %>
+    <section id="sapatos" class="categories">
+        <p> Sapatos </p>  
+        <% if @shoes.present? %>
+            <div class="container">
+                <% @shoes.each do |result| %>
+                    <div class="card">
+                        <%= link_to result.nome, item_troca_path(result.id), class:"card-title" %>
+                        <% result.images.each do |image| %>
+                            <div style="width:150px; height:150px;">
+                                <%= image_tag(image, style:"width:100%; height: auto;")  %>
+                            </div>
+                        <% end %>
+                        <ul class="card-text">             
+                            <li> <b> Condição: </b> <%= result.condicao %> </li>
+                            <li> <b> Descrição: </b> <%= result.descricao %> </li>           
+                        </ul>
+                    </div>
+                <% end %>
+            </div>
+        <% else %>
+            <p class="noItems"> Não há itens cadastrados </p>
+        <% end %>      
+    </section>
+
+    <%# Maquiagens %>
+    <section id="maquiagens" class="categories">
+        <p> Maquiagens </p>
+        <% if @makeup.present? %>
+            <div class="container">
+                <% @makeup.each do |result| %>
+                    <div class="card">
+                        <%= link_to result.nome, item_troca_path(result.id), class:"card-title" %>
+                        <% result.images.each do |image| %>
+                            <div style="width:150px; height:150px;">
+                                <%= image_tag(image, style:"width:100%; height: auto;")  %>
+                            </div>
+                        <% end %>
+                        <ul class="card-text">             
+                            <li> <b> Condição: </b> <%= result.condicao %> </li>
+                            <li> <b> Descrição: </b> <%= result.descricao %> </li>           
+                        </ul>
+                    </div>
+                <% end %>
+            </div>
+        <% else %>
+            <p class="noItems"> Não há itens cadastrados </p>
+        <% end %> 
+    </section>
+
+    <%# Objetos %>
+    <section id="objetos" class="categories">
+        <p> Objetos </p> 
+        <% if @objects.present? %>
+            <div class="container">
+                <% @objects.each do |result| %>
+                    <div class="card">
+                        <%= link_to result.nome, item_troca_path(result.id), class:"card-title" %>
+                        <% result.images.each do |image| %>
+                            <div style="width:150px; height:150px;">
+                                <%= image_tag(image, style:"width:100%; height: auto;")  %>
+                            </div>
+                        <% end %>
+                        <ul class="card-text">             
+                            <li> <b> Condição: </b> <%= result.condicao %> </li>
+                            <li> <b> Descrição: </b> <%= result.descricao %> </li>           
+                        </ul>
+                    </div>
+                <% end %>
+            </div>
+        <% else %>
+            <p class="noItems"> Não há itens cadastrados </p>
+        <% end %>
+        
+        
+    </section>
+
+    <%# Outros %>
+    <section id="outros" class="categories">
+        <p> Outros </p>
+        <% if @others.present? %>
+            <div class="container">
+                <% @others.each do |result| %>
+                    <div class="card">
+                        <%= link_to result.nome, item_troca_path(result.id), class:"card-title" %>
+                        <% result.images.each do |image| %>
+                            <div style="width:150px; height:150px;">
+                                <%= image_tag(image, style:"width:100%; height: auto;")  %>
+                            </div>
+                        <% end %>
+                        <ul class="card-text">             
+                            <li> <b> Condição: </b> <%= result.condicao %> </li>
+                            <li> <b> Descrição: </b> <%= result.descricao %> </li>           
+                        </ul>
+                    </div>
+                <% end %>
+            </div>
+        <% else %>
+            <p class="noItems"> Não há itens cadastrados </p>
+        <% end %>
+    </section>
     
 </body>
