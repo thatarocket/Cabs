@@ -14,7 +14,7 @@
                     <p class="categoryTitle"> <%= category %> </p>
                     <div class="container">
                         <% if @items %>
-                            <% @items.each do |item| %>
+                            <% @items.limit(5).each do |item| %>
                                 <% if item.categoria == category %>
                                     <div class="card">
                                         <%= link_to item.nome, item_troca_path(item.id), class:"card-title" %>
