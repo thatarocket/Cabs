@@ -6,7 +6,8 @@ RSpec.describe "item_trocas/new", type: :view do
       nome: "MyString",
       descricao: "MyText",
       condicao: "MyString",
-      categoria: "MyString"
+      categoria: "MyString",
+      dono: "MyString"
     ))
   end
 
@@ -22,6 +23,8 @@ RSpec.describe "item_trocas/new", type: :view do
       assert_select "select[name=?]", "item_troca[condicao]"
 
       assert_select "select[name=?]", "item_troca[categoria]"
+
+      assert_select "select[name=?]", "item_troca[dono]"
     end
   end
 end
