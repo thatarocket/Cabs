@@ -8,8 +8,7 @@ Eu quero que seja exibido os itens
 
 Cenário: Exibição dos itens com sucesso
 Dado que estou na página de início
-Dado que exista itens cadastrados
-Dado que haja itens existentes na categoria
+Dado que exista um item cadastrado
 Então o item deve ser exibido 
 
 Exemplos:
@@ -18,10 +17,5 @@ Exemplos:
 
 Cenário: Exibição dos itens com erro - sem itens na categoria
 Dado que estou na página de início
-Dado que exista itens cadastrados
-E que não tenha itens existentes na categoria
-Então a categoria não deve ser exibida
-
-Exemplos:
-| nome            | categoria                 | condicao       |
-| 'Boné branco'    | 'Acessórios'             | 'Novo'        |
+Dado que exista um item cadastrado
+Então deverei ver na página "Não há itens cadastrados"

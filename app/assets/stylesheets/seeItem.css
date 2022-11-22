@@ -1,0 +1,67 @@
+/* Exhibition of items */
+
+.categoryTitle {
+    font-weight: bold;
+}
+
+.categories {
+    margin: 0 20px;
+    font-size: 1.5rem;
+}
+
+/* Cards  */
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-left: auto;
+    justify-content: flex-start;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #FAF9F6;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    gap: 0.5rem;
+    width: 250px;
+}
+
+.card-title {
+    font-size: 1.7rem;
+    text-align: center;
+    text-decoration: none;
+    color: #FF2525;
+    width: 100%;
+}
+
+.card-title:hover {
+    color:#1C1C1E;
+}
+
+.card-text {
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+/* image of Item */
+
+.imageItemDiv {
+    height: 220px;
+    width: 200px;
+}
+
+.imgItem {
+    width: 100% !important;
+    height: 100%;
+}
+
+/* In case of no items */
+
+.noItems {
+    font-size: 1rem;
+}
