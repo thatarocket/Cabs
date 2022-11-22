@@ -8,28 +8,32 @@
 
 <body>
     <div class="seeItem">  
-        <% @categories.each do |category| %> 
-            <section id=category class="categories">
-                <p class="categoryTitle"> <%= category %> </p>
-                <div class="exhibitionItem">
-                    <% @items.each do |item| %>
-                        <% if item.categoria == category %>
-                            <div class="card">
-                                <%= link_to item.nome, item_troca_path(item.id), class:"card-title" %>
-                                <% item.images.each do |image| %>
-                                    <div class="imageItemDiv">
-                                        <%= image_tag(image, class:"imgItem", style:"width:auto;")  %>
+        <% if @categories %>
+            <% @categories.each do |category| %> 
+                <section id="<%= category %>" class="categories">
+                    <p class="categoryTitle"> <%= category %> </p>
+                    <div class="container">
+                        <% if @items %>
+                            <% @items.each do |item| %>
+                                <% if item.categoria == category %>
+                                    <div class="card">
+                                        <%= link_to item.nome, item_troca_path(item.id), class:"card-title" %>
+                                        <% item.images.each do |image| %>
+                                            <div class="imageItemDiv">
+                                                <%= image_tag(image, class:"imgItem", style:"width:auto;")  %>
+                                            </div>
+                                        <% end %>
+                                        <ul class="card-text">             
+                                            <li> <b> Condição: </b> <%= item.condicao %> </li>
+                                            <li> <b> Descrição: </b> <%= item.descricao %> </li>           
+                                        </ul>
                                     </div>
                                 <% end %>
-                                <ul class="card-text">             
-                                    <li> <b> Condição: </b> <%= item.condicao %> </li>
-                                    <li> <b> Descrição: </b> <%= item.descricao %> </li>           
-                                </ul>
-                            </div>
+                            <% end %>
                         <% end %>
-                    <% end %>
-                </div>
-            </section>
+                    </div>
+                </section>
+            <% end %>
         <% end %>
     </div>
 </body>

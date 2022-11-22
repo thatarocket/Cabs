@@ -4,18 +4,10 @@ class ApplicationController < ActionController::Base
       @usuario = Usuario.find_by(id: session[:user_id])
 
       # For the see item
-      @categories = ["Roupas", "Acessórios", "Sapatos", "Maquiagens","Objetos", "Outros"] 
-      @categoriesUsed = ItemTroca.select(:categoria).distinct #Categorias em itens cadastrados
-      @items = ItemTroca.all #Itens que eu tenho atualmente
+      if ItemTroca.all.count > 0
+        @categories = ["Roupas", "Acessórios", "Sapatos", "Maquiagens","Objetos", "Outros"] 
+        @items = ItemTroca.all #Itens que eu tenho atualmente
+      end
     end
   end
-
-  def search
-    @pesquisa = ItemTroca.where("categoria LIKE ?", "%" + category + "%")
-  end
-
-  def clothes    
-    ItemTroca.where("categoria LIKE ?", "%Roupas%")
-  end
-
 end
