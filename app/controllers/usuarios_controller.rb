@@ -1,4 +1,10 @@
 class UsuariosController < ApplicationController
+    before_action :find_resource, only: [:show, :edit, :update, :destroy]
+
+    def find_resource
+        @usuario = Usuario.find(params[:id])
+    end
+
     def new    
         @usuario = Usuario.new  
     end
@@ -16,16 +22,13 @@ class UsuariosController < ApplicationController
         end
     end
 
-    # def show
-    #     @usuario = Usuario.find(params[:id])
-    # end
+    def show
+    end
 
     def edit
-        @usuario = Usuario.find(params[:id])
     end
     
     def update
-        @usuario = Usuario.find(params[:id])
     
         if @usuario.update(usuario_params)
             redirect_to :application
@@ -35,7 +38,17 @@ class UsuariosController < ApplicationController
         end
     end
 
+    def destroy
+        @usuario.destroy
+    
+        respond_to do |format|
+          format.html { redirect_to root_path(@usuario), notice: "Usuário deletado." }
+          format.json { head :no_content }
+        end
+    end
+
     private
+    
     def usuario_params
         params.require(:usuario).permit(:username,:email,:password)
     end
