@@ -233,150 +233,92 @@
   },
   "RSpec": {
     "coverage": {
-      "/myapp/app/helpers/item_trocas_helper.rb": {
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/controllers/item_trocas_controller.rb": {
         "lines": [
-          1,
-          null
-        ]
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       },
-      "/myapp/app/helpers/logins_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/myapp/app/helpers/usuarios_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/myapp/app/models/item_troca.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/myapp/app/models/login.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/myapp/app/models/usuario.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/myapp/app/controllers/item_trocas_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/myapp/app/controllers/logins_controller.rb": {
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/controllers/logins_controller.rb": {
         "lines": [
           0,
           0,
@@ -416,7 +358,83 @@
         "branches": {
         }
       },
-      "/myapp/app/controllers/usuarios_controller.rb": {
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/controllers/trocas_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/controllers/usuarios_controller.rb": {
         "lines": [
           0,
           0,
@@ -436,9 +454,9 @@
           0,
           0,
           null,
-          0,
-          0,
-          0,
+          null,
+          null,
+          null,
           null,
           0,
           0,
@@ -452,6 +470,108 @@
           0,
           0,
           0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/helpers/item_trocas_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/helpers/logins_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/helpers/trocas_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/models/current.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/models/item_troca.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/models/login.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/models/troca.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/app/models/usuario.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           0,
           0,
           null,
@@ -465,6 +585,6 @@
         }
       }
     },
-    "timestamp": 1668451720
+    "timestamp": 1669175376
   }
 }
