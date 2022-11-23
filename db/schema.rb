@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_05_203320) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_23_034902) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -44,6 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_05_203320) do
     t.text "descricao"
     t.string "condicao"
     t.string "categoria"
+    t.string "dono"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -53,6 +54,19 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_05_203320) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "trocas", force: :cascade do |t|
+    t.integer "proposta_por_id", null: false
+    t.integer "proposta_para_id", null: false
+    t.integer "item_proposto_id", null: false
+    t.integer "item_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["item_id"], name: "index_trocas_on_item_id"
+    t.index ["item_proposto_id"], name: "index_trocas_on_item_proposto_id"
+    t.index ["proposta_para_id"], name: "index_trocas_on_proposta_para_id"
+    t.index ["proposta_por_id"], name: "index_trocas_on_proposta_por_id"
   end
 
   create_table "usuarios", force: :cascade do |t|
@@ -65,4 +79,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_05_203320) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "trocas", "item_propostos"
+  add_foreign_key "trocas", "items"
+  add_foreign_key "trocas", "proposta_paras"
+  add_foreign_key "trocas", "proposta_pors"
 end

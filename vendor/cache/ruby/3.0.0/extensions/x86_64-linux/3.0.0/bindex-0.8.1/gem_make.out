@@ -1,0 +1,15 @@
+current directory: /mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/vendor/cache/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20221120-31334-321oxe.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/vendor/cache/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+
+current directory: /mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/vendor/cache/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /mnt/c/Users/izabe/OneDrive/Área de Trabalho/faculdade/6semestre/esi/ep5/cabs/vendor/cache/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20221120-31334-b6rk71/skiptrace/internal

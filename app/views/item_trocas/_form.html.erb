@@ -37,6 +37,10 @@
   </p>
 
   <p>
+    <%= form.hidden_field :dono, value: Current.usuario.username %>
+  </p>
+
+  <p>
     <%= form.submit 'Anunciar'%>
   </p>
 <% end %>
