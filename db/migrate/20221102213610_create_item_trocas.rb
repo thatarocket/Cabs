@@ -5,7 +5,6 @@ class CreateItemTrocas < ActiveRecord::Migration[7.0]
       t.text :descricao
       t.string :condicao
       t.string :categoria
-      t.string :dono
 
       t.timestamps
     end

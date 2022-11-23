@@ -74,6 +74,6 @@ class ItemTrocasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def item_troca_params
-      params.require(:item_troca).permit(:nome, :descricao, :condicao, :categoria, :dono, images: [])
+      params.require(:item_troca).permit(:nome, :descricao, :condicao, :categoria, images: [])
     end
 end

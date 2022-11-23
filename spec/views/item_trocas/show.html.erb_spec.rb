@@ -6,8 +6,7 @@ RSpec.describe "item_trocas/show", type: :view do
       nome: "Nome",
       descricao: "MyText",
       condicao: "Condicao",
-      categoria: "Categoria",
-      dono: "Dono"
+      categoria: "Categoria"
     ))
   end
 
@@ -17,6 +16,5 @@ RSpec.describe "item_trocas/show", type: :view do
     expect(rendered).to match(/MyText/)
     expect(rendered).to match(/Condicao/)
     expect(rendered).to match(/Categoria/)
-    expect(rendered).to match(/Dono/)
   end
 end
