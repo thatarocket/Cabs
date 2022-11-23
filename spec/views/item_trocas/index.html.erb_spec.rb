@@ -7,15 +7,13 @@ RSpec.describe "item_trocas/index", type: :view do
         nome: "Nome",
         descricao: "MyText",
         condicao: "Condicao",
-        categoria: "Categoria",
-        dono: "Dono"
+        categoria: "Categoria"
       ),
       ItemTroca.create!(
         nome: "Nome",
         descricao: "MyText",
         condicao: "Condicao",
-        categoria: "Categoria",
-        dono: "Dono"
+        categoria: "Categoria"
       )
     ])
   end
@@ -26,6 +24,5 @@ RSpec.describe "item_trocas/index", type: :view do
     assert_select "tr>td", text: "MyText".to_s, count: 2
     assert_select "tr>td", text: "Condicao".to_s, count: 2
     assert_select "tr>td", text: "Categoria".to_s, count: 2
-    assert_select "tr>td", text: "Dono".to_s, count: 2
   end'''
 end

@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :trocas
   
   # root to: "application#index"
   root to: "logins#new"
