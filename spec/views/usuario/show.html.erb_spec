@@ -1,0 +1,18 @@
+require 'rails_helper'
+
+RSpec.describe "usuario/show", type: :view do
+    @usuario = assign(:usuario, Usuario.create!(
+      username: "Username",
+      email: "user@user.com",
+      password: "user123", 
+      contato: "11999999999"
+    ))
+    
+  end
+
+  it "renders attributes in <p>" do
+    render
+    expect(rendered).to match(/Username/)
+    expect(rendered).to match(/user@user.com/)
+  end
+end
