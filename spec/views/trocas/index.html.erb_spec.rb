@@ -21,9 +21,9 @@ RSpec.describe "trocas/index", type: :view do
   it "renders a list of trocas" do
     render
     cell_selector = Rails::VERSION::STRING >= '7' ? 'div>p' : 'tr>td'
-    assert_select cell_selector, text: Regexp.new("Propost_por".to_s), count: 2
-    assert_select cell_selector, text: Regexp.new("Proposta_para").to_s), count: 2
-    assert_select cell_selector, text: Regexp.new("Item_proposto".to_s), count: 2
-    assert_select cell_selector, text: Regexp.new("Item".to_s), count: 2
+    assert_select cell_selector, text: Regexp.new(Propost_por.to_s), count: 2
+    assert_select cell_selector, text: Regexp.new(Proposta_para).to_s), count: 2
+    assert_select cell_selector, text: Regexp.new(Item_proposto.to_s), count: 2
+    assert_select cell_selector, text: Regexp.new(Item.to_s), count: 2
   end
 end
