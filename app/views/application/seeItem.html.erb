@@ -8,7 +8,7 @@
 
 <body>
     <div class="seeItem">  
-        <% if @items%>
+        <% if @categories && @items%>
             <% @categories.each do |category| %> 
                 <section id="<%= category %>" class="categories">
                     <p class="categoryTitle"> <%= category %> </p>
