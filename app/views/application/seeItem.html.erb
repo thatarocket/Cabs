@@ -8,12 +8,20 @@
 
 <body>
     <div class="seeItem">  
-        <% if @categories %>
+        <% if @categories && @items%>
             <% @categories.each do |category| %> 
                 <section id="<%= category %>" class="categories">
                     <p class="categoryTitle"> <%= category %> </p>
-                    <div class="container">
-                        <% if @items %>
+                    <% @items.each do |obj| %>
+                        <% if obj.categoria == category %>
+                            <% @existe = true %>
+                            <% break %>
+                        <% end %> 
+                    <% end %>
+                    <% if @existe == false %>
+                        <p class="noItems"> Não há itens nesta categoria </p>
+                    <% else %>
+                        <div class="container">
                             <% @items.limit(5).each do |item| %>
                                 <% if item.categoria == category %>
                                     <div class="card">
@@ -30,10 +38,23 @@
                                     </div>
                                 <% end %>
                             <% end %>
-                        <% end %>
-                    </div>
+                        </div>
+                        <% @existe = false%>
+                    <% end %> 
                 </section>
             <% end %>
+        <% else %>
+            <p class="noItems"> Não há itens cadastrados </p>
         <% end %>
     </div>
 </body>
+
+
+
+
+
+
+
+
+
+

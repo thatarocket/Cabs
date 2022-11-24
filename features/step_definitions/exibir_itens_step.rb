@@ -1,7 +1,7 @@
-Então('o item deve ser exibido') do
-    pending # Write code here that turns the phrase above into concrete actions
-end
+Então('o item deverá ser exibido') do
+    expect(page).to have_content(ItemTroca.last.nome)
+  end
   
-Então('a categoria não deve ser exibida') do
-    expect(page).to have_content('Não há itens cadastrados')
+Dado('não exista um item na categoria') do
+    expect(ItemTroca.where(categoria: 'Acessórios')).to be_empty
 end

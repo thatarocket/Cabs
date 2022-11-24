@@ -2,6 +2,7 @@
 
 .categoryTitle {
     font-weight: bold;
+    display: flex;
 }
 
 .categories {

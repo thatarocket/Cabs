@@ -9,13 +9,19 @@ Eu quero que seja exibido os itens
 Cenário: Exibição dos itens com sucesso
 Dado que estou na página de início
 Dado que exista um item cadastrado
-Então o item deve ser exibido 
+Então o item deverá ser exibido 
 
 Exemplos:
-| nome             | categoria                 | condicao       |
-| 'Boné branco'    | 'Acessórios'             | 'Novo'        |
+| nome                  | categoria            | condicao       |
+| 'DVD Harry Potter'    | 'Objetos'             | 'Usado'        |
 
 Cenário: Exibição dos itens com erro - sem itens na categoria
 Dado que estou na página de início
-Dado que exista um item cadastrado
+E não exista um item na categoria
 Então deverei ver na página "Não há itens cadastrados"
+
+Exemplos:
+| nome                  | categoria            | condicao            |
+| 'DVD Harry Potter'    | 'Objetos'             | 'Usado'            |
+| 'Blusa Harry Potter'    | 'Vestiário'             | 'Usado'        |
+| 'Tênis Harry Potter'    | 'Sapatos'             | 'Usado'        |
