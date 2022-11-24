@@ -9,7 +9,7 @@ Eu quero que seja exibido os itens
 Cenário: Exibição dos itens com sucesso
 Dado que estou na página de início
 Dado que exista um item cadastrado
-Então o item deverá ser exibido 
+Então deverei ver o item na página
 
 Exemplos:
 | nome                  | categoria            | condicao       |
