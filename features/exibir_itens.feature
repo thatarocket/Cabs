@@ -7,8 +7,8 @@ Para que eu possa ver os itens disponíveis
 Eu quero que seja exibido os itens
 
 Cenário: Exibição dos itens com sucesso
-Dado que estou na página de início
 Dado que exista um item cadastrado
+Dado que estou na página de início
 Então deverei ver o item na página
 
 Exemplos:
