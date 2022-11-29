@@ -15,7 +15,7 @@ class ItemTrocasController < ApplicationController
       @pesquisa = ''
     else
       @item = params[:q].downcase
-      @pesquisa = ItemTroca.where("LOWER(nome) LIKE ?", "%" + @item + "%")
+      @pesquisa = ItemTroca.where("LOWER(nome) LIKE ?", "%" + @item + "%" + "OR LOWER(categoria) LIKE ?", "%" + @item + "%")
     end
   end
 
