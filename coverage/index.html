@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-26T21:47:00+00:00">2022-11-26T21:47:00+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-30T00:11:08+00:00">2022-11-30T00:11:08+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -911,7 +911,7 @@
 
             
 
-            <code class="ruby">      @pesquisa = ItemTroca.where(&quot;LOWER(nome) LIKE ?&quot;, &quot;%&quot; + @item + &quot;%&quot;)</code>
+            <code class="ruby">      @pesquisa = ItemTroca.where(&quot;LOWER(nome) LIKE ? OR LOWER(categoria) LIKE ?&quot;, &quot;%&quot; + @item + &quot;%&quot;, &quot;%&quot; + @item + &quot;%&quot;)</code>
           </li>
         </div>
       
