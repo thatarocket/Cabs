@@ -8,16 +8,28 @@
 
 <body>
     <%= render template: "application/nav" %>
+    
+    <div class="header">
+        
+        <div class="headerLinks">
+            <%= link_to "Roupas", "#Roupas", class:"categoryLink" %>
+            <%= link_to "Acessórios", "#Acessórios", class:"categoryLink" %>
+            <%= link_to "Sapatos", "#Sapatos", class:"categoryLink" %>
+            <%= link_to "Maquiagens", "#Maquiagens", class:"categoryLink" %>
+            <%= link_to "Objetos", "#Objetos", class:"categoryLink" %>
+            <%= link_to "Outros", "#Outros", class:"categoryLink" %>
+        </div>
 
-    <h1>
-        <strong> Bem vindo ao Cabs!</strong>
-    </h1>
+        <div class="userOptions">
+            <% if @usuario %>
+                <p class="helloUser"> Olá, <%= @usuario.username %> </p>
+                <%= button_to "deslogar", logout_path, class:"deslogarBtn", method: :delete %>
+                <%= button_to "Deletar sua conta!!!", @usuario, method: :delete %>
+                <li><%= link_to "Editar sua conta", edit_usuario_path(@usuario) %></li>
+            <% end %>
+        </div>
+    </div>
 
-    <% if @usuario %>
-        <p>Olá, <%= @usuario.username %> </p>
-        <%= button_to "deslogar", logout_path, method: :delete %>
-        <%= button_to "Deletar sua conta!!!", @usuario, method: :delete %>
-        <li><%= link_to "Editar sua conta", edit_usuario_path(@usuario) %></li>
-    <% end %>
+    <%= render template: "application/seeItem" %>
     
 </body>

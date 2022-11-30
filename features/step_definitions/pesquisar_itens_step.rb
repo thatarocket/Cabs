@@ -18,6 +18,6 @@ Então('deverei ver na página {string}') do |string|
     expect(page).to have_content(string)
 end
 
-Então('deverei ver o item na página de resultados') do
+Então('deverei ver o item na página') do
     expect(page).to have_content(ItemTroca.last.nome)
 end

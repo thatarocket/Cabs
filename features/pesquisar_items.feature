@@ -11,7 +11,7 @@ Dado que estou na página de início
 Dado que exista um item cadastrado
 Quando preencho o campo "item" com <item>
 E clico em pesquisar
-Então deverei ver o item na página de resultados
+Então deverei ver o item na página
 E deverei ver a página de resultados
 
 Exemplos:

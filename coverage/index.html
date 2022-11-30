@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-23T20:10:28-03:00">2022-11-23T20:10:28-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-30T00:11:08+00:00">2022-11-30T00:11:08+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.26
+         3.24
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>102</b> relevant lines,
-    <span class="green"><b>102</b> lines covered</span> and
+    <b>98</b> relevant lines,
+    <span class="green"><b>98</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -201,8 +201,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>85</b> relevant lines,
-    <span class="green"><b>85</b> lines covered</span> and
+    <b>81</b> relevant lines,
+    <span class="green"><b>81</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -911,7 +911,7 @@
 
             
 
-            <code class="ruby">      @pesquisa = ItemTroca.where(&quot;LOWER(nome) LIKE ?&quot;, &quot;%&quot; + @item + &quot;%&quot;)</code>
+            <code class="ruby">      @pesquisa = ItemTroca.where(&quot;LOWER(nome) LIKE ? OR LOWER(categoria) LIKE ?&quot;, &quot;%&quot; + @item + &quot;%&quot;, &quot;%&quot; + @item + &quot;%&quot;)</code>
           </li>
         </div>
       

@@ -5,3 +5,52 @@ body {
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    margin: 0 10px;
+}
+
+
+/* Header links */
+
+.headerLinks {
+    display:flex;
+    gap:1rem;
+    width: 100%;
+}
+
+.categoryLink {
+    text-decoration: none;
+    color:#f44336;
+}
+
+.categoryLink:hover {
+    color: black;
+}
+
+/* Hello User and logout */
+
+.userOptions {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.deslogarBtn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+
+

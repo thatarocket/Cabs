@@ -1,0 +1,60 @@
+<head>
+    <meta charset="UTF-8">
+    <%= stylesheet_link_tag "seeItem", "data-turbo-track": "reload" %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="seeItem">  
+        <% if @categories && @items%>
+            <% @categories.each do |category| %> 
+                <section id="<%= category %>" class="categories">
+                    <p class="categoryTitle"> <%= category %> </p>
+                    <% @items.each do |obj| %>
+                        <% if obj.categoria == category %>
+                            <% @existe = true %>
+                            <% break %>
+                        <% end %> 
+                    <% end %>
+                    <% if @existe == false %>
+                        <p class="noItems"> Não há itens nesta categoria </p>
+                    <% else %>
+                        <div class="container">
+                            <% @items.limit(5).each do |item| %>
+                                <% if item.categoria == category %>
+                                    <div class="card">
+                                        <%= link_to item.nome, item_troca_path(item.id), class:"card-title" %>
+                                        <% item.images.each do |image| %>
+                                            <div class="imageItemDiv">
+                                                <%= image_tag(image, class:"imgItem", style:"width:auto;")  %>
+                                            </div>
+                                        <% end %>
+                                        <ul class="card-text">             
+                                            <li> <b> Condição: </b> <%= item.condicao %> </li>
+                                            <li> <b> Descrição: </b> <%= item.descricao %> </li>           
+                                        </ul>
+                                    </div>
+                                <% end %>
+                            <% end %>
+                        </div>
+                        <% @existe = false%>
+                    <% end %> 
+                </section>
+            <% end %>
+        <% else %>
+            <p class="noItems"> Não há itens cadastrados </p>
+        <% end %>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
