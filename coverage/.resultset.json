@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/myapp/app/controllers/item_trocas_controller.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/item_trocas_controller.rb": {
         "lines": [
           1,
           1,
@@ -84,25 +84,25 @@
           null
         ]
       },
-      "/myapp/app/helpers/item_trocas_helper.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/item_trocas_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/helpers/logins_helper.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/logins_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/helpers/usuarios_helper.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/usuarios_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/models/item_troca.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/item_troca.rb": {
         "lines": [
           1,
           1,
@@ -113,7 +113,7 @@
           null
         ]
       },
-      "/myapp/app/controllers/usuarios_controller.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/usuarios_controller.rb": {
         "lines": [
           1,
           1,
@@ -150,6 +150,13 @@
           4,
           4,
           null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
           null,
           null,
           1,
@@ -159,7 +166,7 @@
           null
         ]
       },
-      "/myapp/app/models/usuario.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/usuario.rb": {
         "lines": [
           null,
           null,
@@ -177,21 +184,21 @@
           null
         ]
       },
-      "/myapp/app/controllers/logins_controller.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/logins_controller.rb": {
         "lines": [
           1,
+          1,
+          9,
+          null,
+          null,
           1,
           7,
           null,
-          null,
-          1,
-          6,
-          null,
-          6,
-          4,
-          4,
-          2,
-          2,
+          7,
+          5,
+          5,
+          3,
+          3,
           null,
           2,
           2,
@@ -210,12 +217,12 @@
           null,
           1,
           1,
-          13,
+          16,
           null,
           null
         ]
       },
-      "/myapp/app/models/login.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/login.rb": {
         "lines": [
           null,
           null,
@@ -234,25 +241,25 @@
   },
   "RSpec": {
     "coverage": {
-      "/myapp/app/helpers/item_trocas_helper.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/item_trocas_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/helpers/logins_helper.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/logins_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/helpers/usuarios_helper.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/usuarios_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/myapp/app/models/item_troca.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/item_troca.rb": {
         "lines": [
           1,
           1,
@@ -263,7 +270,7 @@
           null
         ]
       },
-      "/myapp/app/models/login.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/login.rb": {
         "lines": [
           null,
           null,
@@ -277,7 +284,7 @@
           null
         ]
       },
-      "/myapp/app/models/usuario.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/usuario.rb": {
         "lines": [
           null,
           null,
@@ -295,7 +302,7 @@
           null
         ]
       },
-      "/myapp/app/controllers/item_trocas_controller.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/item_trocas_controller.rb": {
         "lines": [
           1,
           1,
@@ -313,6 +320,7 @@
           0,
           0,
           null,
+          0,
           0,
           null,
           null,
@@ -377,7 +385,7 @@
           null
         ]
       },
-      "/myapp/app/controllers/logins_controller.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/logins_controller.rb": {
         "lines": [
           0,
           0,
@@ -417,7 +425,7 @@
         "branches": {
         }
       },
-      "/myapp/app/controllers/usuarios_controller.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/usuarios_controller.rb": {
         "lines": [
           0,
           0,
@@ -453,6 +461,13 @@
           0,
           0,
           0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
           0,
           0,
           null,
@@ -466,6 +481,6 @@
         }
       }
     },
-    "timestamp": 1668451720
+    "timestamp": 1669241743
   }
 }

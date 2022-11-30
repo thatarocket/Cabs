@@ -24,6 +24,8 @@
             <% if @usuario %>
                 <p class="helloUser"> Olá, <%= @usuario.username %> </p>
                 <%= button_to "deslogar", logout_path, class:"deslogarBtn", method: :delete %>
+                <%= button_to "Deletar sua conta!!!", @usuario, method: :delete %>
+                <li><%= link_to "Editar sua conta", edit_usuario_path(@usuario) %></li>
             <% end %>
         </div>
     </div>

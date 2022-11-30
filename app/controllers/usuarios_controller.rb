@@ -35,6 +35,13 @@ class UsuariosController < ApplicationController
         end
     end
 
+    def destroy
+        @usuario = Usuario.find(params[:id])
+        @usuario.destroy
+    
+        redirect_to login_path, status: :see_other, notice: "Conta deletada com sucesso!"
+      end
+
     private
     def usuario_params
         params.require(:usuario).permit(:username,:email,:password)
