@@ -7,10 +7,14 @@ Rails.application.routes.draw do
   resources :usuarios
   resource :login, only: [:new, :create]
   resources :item_trocas
-  
+
+  #perfil
+  get "/edit_usuario", to: "usuarios#edit" 
+
+
   # Login e cadastro 
   get "/application", to: "application#index"
-  post "/usuarios", to: "usuarios#create"
+  post "/create_usuario", to: "usuarios#create"
   delete "/logout", to: "logins#destroy"
 
   get "login", to: "logins#new"

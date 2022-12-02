@@ -1,4 +1,9 @@
 Dado('que estou na página de início') do
+    @usuario = FactoryBot.create(:usuario)
+    visit '/login/new'
+    fill_in "Username", :with => @usuario.username
+    fill_in "Password", :with =>  @usuario.password
+    click_on 'Realizar login'
     visit '/application'
 end
   
