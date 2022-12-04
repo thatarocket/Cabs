@@ -327,6 +327,7 @@ DEPENDENCIES
   database_cleaner
   debug
   factory_bot_rails
+  ffi
   importmap-rails
   jbuilder
   pg
