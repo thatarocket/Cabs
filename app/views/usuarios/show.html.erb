@@ -1,9 +1,37 @@
-<p>
-  <strong>username:</strong>
-  <%= @usuario.username %>
-</p>
- 
-<p>
-  <strong>Email:</strong>
-  <%= @usuario.email %>
-</p>
+<div>
+  <h2>
+    Perfil do Usuário
+  </h2>
+
+  <div>
+    <p>
+      <b> Username: </b>
+      <%= @usuario.username  %>
+    </p>
+
+    <p>
+      <b>Email: </b>
+      <%= @usuario.email %>
+    </p>
+  </div>
+
+  <div>
+    <p>
+      <%= button_to "Editar", edit_usuario_path, method: :get %>
+    </p>
+    <p>
+      <%= button_to "Excluir conta", @usuario, method: :delete, data: { confirm: 'Você tem certeza?'} %>
+    </p>
+
+
+  </div>
+
+
+  <div>
+    <p>
+      <%= link_to "Voltar", "/application" %>
+    </p>
+  </div>
+
+
+</div>

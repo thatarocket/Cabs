@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/item_trocas_controller.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/item_trocas_controller.rb": {
         "lines": [
           1,
           1,
@@ -84,25 +84,25 @@
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/item_trocas_helper.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/item_trocas_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/logins_helper.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/logins_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/usuarios_helper.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/usuarios_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/item_troca.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/item_troca.rb": {
         "lines": [
           1,
           1,
@@ -113,9 +113,15 @@
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/usuarios_controller.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/usuarios_controller.rb": {
         "lines": [
           1,
+          1,
+          null,
+          1,
+          12,
+          null,
+          null,
           1,
           10,
           null,
@@ -133,24 +139,21 @@
           null,
           null,
           null,
-          null,
-          null,
+          1,
           null,
           null,
           1,
+          null,
+          null,
+          1,
+          null,
+          5,
+          0,
+          null,
+          5,
           5,
           null,
           null,
-          1,
-          5,
-          null,
-          5,
-          1,
-          null,
-          4,
-          4,
-          null,
-          null,
           null,
           1,
           1,
@@ -160,13 +163,14 @@
           null,
           null,
           1,
+          null,
           1,
           15,
           null,
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/usuario.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/usuario.rb": {
         "lines": [
           null,
           null,
@@ -181,24 +185,25 @@
           1,
           null,
           1,
+          null,
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/logins_controller.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/logins_controller.rb": {
         "lines": [
           1,
           1,
-          9,
+          17,
           null,
           null,
           1,
-          7,
+          15,
           null,
-          7,
-          5,
-          5,
-          3,
-          3,
+          15,
+          13,
+          13,
+          11,
+          11,
           null,
           2,
           2,
@@ -217,12 +222,12 @@
           null,
           1,
           1,
-          16,
+          40,
           null,
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/login.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/login.rb": {
         "lines": [
           null,
           null,
@@ -237,29 +242,29 @@
         ]
       }
     },
-    "timestamp": 1669767067
+    "timestamp": 1670177815
   },
   "RSpec": {
     "coverage": {
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/item_trocas_helper.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/item_trocas_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/logins_helper.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/logins_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/usuarios_helper.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/helpers/usuarios_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/item_troca.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/item_troca.rb": {
         "lines": [
           1,
           1,
@@ -270,7 +275,7 @@
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/login.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/login.rb": {
         "lines": [
           null,
           null,
@@ -284,7 +289,7 @@
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/usuario.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/models/usuario.rb": {
         "lines": [
           null,
           null,
@@ -299,10 +304,11 @@
           1,
           null,
           1,
+          null,
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/item_trocas_controller.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/item_trocas_controller.rb": {
         "lines": [
           1,
           1,
@@ -385,7 +391,7 @@
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/logins_controller.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/logins_controller.rb": {
         "lines": [
           0,
           0,
@@ -425,25 +431,10 @@
         "branches": {
         }
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/usuarios_controller.rb": {
+      "/home/fakichi/Documents/usp/ESI/Cabs/app/controllers/usuarios_controller.rb": {
         "lines": [
           0,
           0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           null,
           0,
           0,
@@ -463,6 +454,24 @@
           0,
           0,
           0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           0,
           0,
@@ -472,6 +481,7 @@
           0,
           null,
           0,
+          null,
           0,
           0,
           0,
@@ -481,6 +491,6 @@
         }
       }
     },
-    "timestamp": 1669241743
+    "timestamp": 1670175372
   }
 }
