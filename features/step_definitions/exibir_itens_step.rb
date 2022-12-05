@@ -1,3 +1,4 @@
 Dado('não exista um item na categoria') do
-    expect(ItemTroca.where(categoria: 'Acessórios')).to be_empty
+    find(:xpath,'/html/body/div[2]/section[2]/p[2]').text == 'Não há itens nesta categoria'
 end
+
