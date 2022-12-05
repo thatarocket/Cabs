@@ -19,7 +19,7 @@ Cenário: Exibição dos itens com erro - sem itens na categoria
 Dado que exista um item cadastrado
 Dado que estou na página de início
 E não exista um item na categoria
-Então deverei ver na página "Não há itens cadastrados"
+Então deverei ver na página 'Não há itens nesta categoria'
 
 Exemplos:
 | nome                  | categoria            | condicao            |
