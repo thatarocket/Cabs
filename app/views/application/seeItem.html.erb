@@ -9,8 +9,9 @@
 <body>
     <div class="seeItem"> 
         <% if @items[category_item].empty? %>
-            <p> Não há itens nesta categoria </p>
+            <p class="noItems"> Não há itens nesta categoria </p>
         <% else %>
+            <p class="seeAll" action="/application/all"> ver todos<p>
             <% @items[category_item].each do |item| %>
                 <div class="card">
                     <%= link_to item.nome, item_troca_path(item.id), class:"card-title" %>

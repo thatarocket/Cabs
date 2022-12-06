@@ -1,24 +1,17 @@
-/* Exhibition of items */
+/* see all items of a category */
 
-.categoryTitle {
-    font-weight: bold;
+.seeAll {
     display: flex;
+    font-size: 1rem;
+    color: #f44336;
+    margin-bottom: 5px;
 }
 
-.categories {
-    margin: 0 20px;
-    font-size: 1.5rem;
+.seeAll:hover {
+    font-weight: bold;
 }
 
 /* Cards  */
-
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-left: auto;
-    justify-content: flex-start;
-}
 
 .card {
     display: flex;
@@ -67,3 +60,4 @@
 .noItems {
     font-size: 1rem;
 }
+

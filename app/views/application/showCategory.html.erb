@@ -10,7 +10,6 @@
     <% @categories.each do |category| %>
         <section id="<%= category %>" class="categories">
             <p class="categoryTitle" id="category_item"> <%= category %> </p>
-            <p class="seeAll"> ver todos<p>
             <%= render template: "application/seeItem", :locals => {category_item: category} %>
         </section>
     <% end %>
