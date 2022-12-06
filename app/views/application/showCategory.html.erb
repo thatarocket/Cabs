@@ -1,0 +1,17 @@
+<head>
+    <meta charset="UTF-8">
+    <%= stylesheet_link_tag "showCategory", "data-turbo-track": "reload" %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <% @categories.each do |category| %>
+        <section id="<%= category %>" class="categories">
+            <p class="categoryTitle" id="category_item"> <%= category %> </p>
+            <p class="seeAll"> ver todos<p>
+            <%= render template: "application/seeItem", :locals => {category_item: category} %>
+        </section>
+    <% end %>
+</body>
