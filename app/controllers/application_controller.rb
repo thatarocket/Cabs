@@ -16,39 +16,12 @@ class ApplicationController < ActionController::Base
   end
 
   def item_troca
-    roupas
-    acessórios
-    sapatos
-    maquiagens
-    objetos
-    outros
-  end
-
-  def roupas
-    @Roupas = ItemTroca.where(categoria: "Roupas")
-  end
-
-  def acessórios
-    @Acessórios = ItemTroca.where(categoria: "Acessórios")
-  end
-
-  def sapatos
-    @Sapatos = ItemTroca.where(categoria: "Sapatos")
-  end
-
-  def maquiagens
-    @Maquiagens = ItemTroca.where(categoria: "Maquiagens")
-  end
-
-  def objetos
-    @Objetos = ItemTroca.where(categoria: "Objetos")
-  end
-
-  def outros
-    @Outros = ItemTroca.where(categoria: "Outros")
-  end
-
-  def show
-    
+    @items = { "Roupas" =>ItemTroca.where(categoria:"Roupas").last(5),
+              "Acessórios" => ItemTroca.where(categoria:"Acessórios").last(5),
+              "Sapatos" =>ItemTroca.where(categoria:"Sapatos").last(5),
+              "Maquiagens" => ItemTroca.where(categoria:"Maquiagens").last(5),
+              "Objetos" =>ItemTroca.where(categoria:"Objetos").last(5),
+              "Outros" => ItemTroca.where(categoria:"Outros").last(5)
+             }
   end
 end

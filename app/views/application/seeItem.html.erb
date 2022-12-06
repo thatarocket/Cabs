@@ -8,7 +8,24 @@
 
 <body>
     <div class="seeItem"> 
-        <p> Não há itens nesta categoria </p>
+        <% if @items[category_item].empty? %>
+            <p> Não há itens nesta categoria </p>
+        <% else %>
+            <% @items[category_item].each do |item| %>
+                <div class="card">
+                    <%= link_to item.nome, item_troca_path(item.id), class:"card-title" %>
+                    <% item.images.each do |image| %>
+                        <div class="imageItemDiv">
+                            <%= image_tag(image, class:"imgItem", style:"width:auto;")  %>
+                        </div>
+                    <% end %>
+                    <ul class="card-text">             
+                        <li> <b> Condição: </b> <%= item.condicao %> </li>
+                        <li> <b> Descrição: </b> <%= item.descricao %> </li>           
+                    </ul>
+                </div>
+            <% end %>
+        <% end %>
     </div>
 </body>
 
