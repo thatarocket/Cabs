@@ -1,5 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
+<h1>Seus Itens Favoritos</h1>
+
+<% @usuario = Usuario.find_by(id: session[:user_id]) %>
+<% @usuario.favorites.each do |favorite|%>
+Você favoritou este item: <%= link_to favorite.item_troca.nome, favorite.item_troca%>
+<br>
+<% end %>
+
 <h1>Itens</h1>
 
 <div id="item_trocas">
@@ -38,4 +46,9 @@
   <% end %>
 </div>
 
+<p>
 <%= link_to "Anunciar novo item", new_item_troca_path %>
+</p>
+<p>
+<%= link_to "Voltar para home", application_path %>
+</p>

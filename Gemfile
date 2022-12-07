@@ -39,6 +39,8 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+gem 'devise'
+gem 'jquery-rails'
 gem 'pg'
 gem 'bcrypt'
 # database_cleaner is not required, but highly recommended

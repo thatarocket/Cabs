@@ -13,6 +13,10 @@
           null,
           null,
           1,
+          7,
+          1,
+          null,
+          7,
           null,
           null,
           1,
@@ -84,6 +88,12 @@
           null
         ]
       },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/favorites_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/item_trocas_helper.rb": {
         "lines": [
           1,
@@ -109,6 +119,36 @@
           null,
           1,
           1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/favorite.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/usuario.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
           1,
           null
         ]
@@ -166,39 +206,21 @@
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/usuario.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
       "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/logins_controller.rb": {
         "lines": [
           1,
           1,
-          9,
+          10,
           null,
           null,
           1,
-          7,
+          8,
           null,
-          7,
-          5,
-          5,
-          3,
-          3,
+          8,
+          6,
+          6,
+          4,
+          4,
           null,
           2,
           2,
@@ -217,7 +239,7 @@
           null,
           1,
           1,
-          16,
+          19,
           null,
           null
         ]
@@ -235,155 +257,136 @@
           1,
           null
         ]
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/favorites_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1669767067
+    "timestamp": 1670394091
   },
   "RSpec": {
     "coverage": {
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/item_trocas_helper.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/favorites_controller.rb": {
         "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/logins_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/usuarios_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/item_troca.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/login.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/usuario.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       },
       "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/item_trocas_controller.rb": {
         "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
           0,
           0,
           null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
           null,
           0,
           0,
           0,
           null,
           null,
+          0,
+          0,
           null,
-          1,
-          null,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0,
           null,
           null,
-          null,
-          1,
+          0,
+          0,
           0,
           null,
-          null
-        ]
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       },
       "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/logins_controller.rb": {
         "lines": [
@@ -445,9 +448,9 @@
           0,
           0,
           null,
-          0,
-          0,
-          0,
+          null,
+          null,
+          null,
           null,
           0,
           0,
@@ -479,8 +482,99 @@
         ],
         "branches": {
         }
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/favorites_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/item_trocas_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/logins_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/favorite.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/item_troca.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/login.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/usuario.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1669241743
+    "timestamp": 1670369015
   }
 }

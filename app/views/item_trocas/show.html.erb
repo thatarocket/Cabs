@@ -5,6 +5,8 @@
   <%= @item_troca.nome %>
 </p>
 
+<%= link_to favorite_text, favorites_update_path(item_troca: @item_troca), id:'favorite_link', remote: true %>
+
 <p>
   <strong>Imagens</strong>
   <% @item_troca.images.each do |image| %>
@@ -33,5 +35,5 @@
   <%= link_to "Editar este item", edit_item_troca_path(@item_troca) %> |
   <%= link_to "Voltar aos itens", item_trocas_path %>
 
-  <%= button_to "Excluir este item", @item_troca, method: :delete %>
+  <%= button_to "Excluir este item", @item_troca, method: :delete, dependent: :destroy %>
 </div>

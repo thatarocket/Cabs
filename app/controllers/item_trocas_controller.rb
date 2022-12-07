@@ -8,6 +8,10 @@ class ItemTrocasController < ApplicationController
 
   # GET /item_trocas/1 or /item_trocas/1.json
   def show
+    if session[:user_id]
+      @usuario = Usuario.find_by(id: session[:user_id])
+    end
+    @favorite_exists = Favorite.where(item_troca: @item_troca, usuario: @usuario) == [] ? false : true
   end
 
   def search
