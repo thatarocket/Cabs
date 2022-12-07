@@ -12,12 +12,12 @@ class ApplicationController < ActionController::Base
   end
 
   def item_troca
-    @items = { "Roupas" =>ItemTroca.where(categoria:"Roupas").last(5),
-              "Acessórios" => ItemTroca.where(categoria:"Acessórios").last(5),
-              "Sapatos" =>ItemTroca.where(categoria:"Sapatos").last(5),
-              "Maquiagens" => ItemTroca.where(categoria:"Maquiagens").last(5),
-              "Objetos" =>ItemTroca.where(categoria:"Objetos").last(5),
-              "Outros" => ItemTroca.where(categoria:"Outros").last(5)
+    @items = { "Roupas" =>ItemTroca.where(categoria:"Roupas"),
+              "Acessórios" => ItemTroca.where(categoria:"Acessórios"),
+              "Sapatos" =>ItemTroca.where(categoria:"Sapatos"),
+              "Maquiagens" => ItemTroca.where(categoria:"Maquiagens"),
+              "Objetos" =>ItemTroca.where(categoria:"Objetos"),
+              "Outros" => ItemTroca.where(categoria:"Outros")
              }
   end
 
