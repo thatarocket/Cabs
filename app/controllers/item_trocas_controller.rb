@@ -31,6 +31,7 @@ class ItemTrocasController < ApplicationController
   # POST /item_trocas or /item_trocas.json
   def create
     @item_troca = ItemTroca.new(item_troca_params)
+    @usuario = Usuario.find(params[:id])
 
     respond_to do |format|
       if @item_troca.save
@@ -74,6 +75,6 @@ class ItemTrocasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def item_troca_params
-      params.require(:item_troca).permit(:nome, :descricao, :condicao, :categoria, images: [])
+      params.require(:item_troca).permit(:nome, :descricao, :condicao, :categoria, :usuario, images: [])
     end
 end

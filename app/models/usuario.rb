@@ -6,6 +6,7 @@
 
 class Usuario < ApplicationRecord
     has_secure_password
+    has_many :item_trocas
     
     validates :username, presence: { message: "É obrigatório informar o nome de usuário!" },uniqueness: true
     validates :email, presence: { message: "É obrigatório informar o email!" }, format: { with: URI::MailTo::EMAIL_REGEXP,

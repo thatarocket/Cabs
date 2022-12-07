@@ -5,6 +5,7 @@ class CreateItemTrocas < ActiveRecord::Migration[7.0]
       t.text :descricao
       t.string :condicao
       t.string :categoria
+      t.references :usuario, index:true, foreign_key: true
 
       t.timestamps
     end
