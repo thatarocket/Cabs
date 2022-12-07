@@ -1,6 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe "item_trocas/show", type: :view do
+  def favorite_text
+    return @favorite_exists ? "Desfavoritar" : "Favoritar"
+  end
+
+  helper_method :favorite_text
   before(:each) do
     @item_troca = assign(:item_troca, ItemTroca.create!(
       nome: "Nome",

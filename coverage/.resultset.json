@@ -293,86 +293,151 @@
   },
   "RSpec": {
     "coverage": {
-      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/favorites_controller.rb": {
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/favorites_helper.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/item_trocas_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/logins_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/usuarios_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/favorite.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/item_troca.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/login.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/models/usuario.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
       },
       "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/item_trocas_controller.rb": {
         "lines": [
-          0,
+          1,
+          1,
+          null,
+          null,
+          1,
           0,
           null,
           null,
-          0,
-          0,
-          0,
           null,
-          null,
+          1,
           0,
           0,
           null,
           0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           null,
           null,
+          1,
           0,
           0,
-          0,
-          null,
           null,
           0,
           0,
           null,
           null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           null,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
-          0,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
           0,
           null,
           0,
           0,
           0,
           0,
+          null,
+          0,
           0,
           null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
           0,
           null,
           0,
@@ -380,6 +445,42 @@
           0,
           null,
           null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/favorites_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0,
@@ -482,99 +583,8 @@
         ],
         "branches": {
         }
-      },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/favorites_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/item_trocas_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/logins_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/usuarios_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/favorite.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/item_troca.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/login.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/usuario.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1670369015
+    "timestamp": 1670395365
   }
 }
