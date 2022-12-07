@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'favorites/update'
   
   # root to: "application#index"
   root to: "logins#new"

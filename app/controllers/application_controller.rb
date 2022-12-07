@@ -24,4 +24,11 @@ class ApplicationController < ActionController::Base
   def seeAll
     item_troca
   end
+  
+  
+  def favorite_text
+    return @favorite_exists ? "Desfavoritar" : "Favoritar"
+  end
+
+  helper_method :favorite_text
 end
