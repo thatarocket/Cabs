@@ -10,4 +10,11 @@ class ApplicationController < ActionController::Base
       @items = ItemTroca.all #Itens que eu tenho atualmente
     end
   end
+  
+  
+  def favorite_text
+    return @favorite_exists ? "Desfavoritar" : "Favoritar"
+  end
+
+  helper_method :favorite_text
 end
