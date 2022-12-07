@@ -1,23 +1,9 @@
-/* Exhibition of items */
-
-.categoryTitle {
-    font-weight: bold;
-    display: flex;
-}
-
-.categories {
-    margin: 0 20px;
-    font-size: 1.5rem;
-}
-
 /* Cards  */
 
 .container {
     display: flex;
-    justify-content: center;
     gap: 3rem;
-    margin-left: auto;
-    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -30,7 +16,7 @@
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     gap: 0.5rem;
     width: 250px;
-    margin-bottom: 15px;
+    margin: 15px;
 }
 
 .card-title {
@@ -66,4 +52,6 @@
 
 .noItems {
     font-size: 1rem;
+    display: flex;
 }
+

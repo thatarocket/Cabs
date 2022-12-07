@@ -1,7 +1,18 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/Users/guilhermesena/code/Cabs/Cabs/app/controllers/item_trocas_controller.rb": {
+      "/myapp/app/models/item_troca.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/myapp/app/controllers/item_trocas_controller.rb": {
         "lines": [
           1,
           1,
@@ -94,19 +105,19 @@
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/item_trocas_helper.rb": {
+      "/myapp/app/helpers/item_trocas_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/logins_helper.rb": {
+      "/myapp/app/helpers/logins_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/helpers/usuarios_helper.rb": {
+      "/myapp/app/helpers/usuarios_helper.rb": {
         "lines": [
           1,
           null
@@ -244,7 +255,7 @@
           null
         ]
       },
-      "/Users/guilhermesena/code/Cabs/Cabs/app/models/login.rb": {
+      "/myapp/app/models/login.rb": {
         "lines": [
           null,
           null,
@@ -287,7 +298,7 @@
         ]
       }
     },
-    "timestamp": 1670435263
+    "timestamp": 1670444760
   },
   "RSpec": {
     "coverage": {

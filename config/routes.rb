@@ -20,4 +20,7 @@ Rails.application.routes.draw do
   # Pesquisa
   get "/application/search", to: "item_trocas#search"
 
+  # Exibicao categorias
+  get "/application/seeAll", to: "application#seeAll"
+
 end
