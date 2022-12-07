@@ -1,0 +1,27 @@
+<div>
+  <h2>
+    Adicionar contato
+  </h2>
+
+  <div>
+
+  <%= form_with scope: :post, url: create_contato_usuario_path(@usuario) do |form| %>
+    <p>
+      <%= form.label :contato %><br>
+      <%= form.text_field :contato %>
+    </p>
+
+    <%= form.submit %>
+
+
+  <% end %>
+
+
+  <div>
+    <p>
+        <%= link_to "Voltar", "/application" %>
+    </p>
+  </div>
+
+
+</div>

@@ -4,13 +4,14 @@ Rails.application.routes.draw do
   root to: "logins#new"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # Defines the root path route ("/")
-  resources :usuarios
+  resources :usuarios do
+    member do
+      get "/contato", to: "usuarios#contato"
+      post "/create_contato", to: "usuarios#create_contato"
+    end
+  end 
   resource :login, only: [:new, :create]
   resources :item_trocas
-
-  #perfil
-  get "/edit_usuario", to: "usuarios#edit" 
-
 
   # Login e cadastro 
   get "/application", to: "application#index"

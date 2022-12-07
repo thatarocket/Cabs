@@ -13,6 +13,19 @@
       <b>Email: </b>
       <%= @usuario.email %>
     </p>
+    
+    <p>
+      <b>Contato: </b>
+      <%= @usuario.contato %>
+    </p>
+
+    <p>
+      <%= button_to "adicionar contato", contato_usuario_path(@usuario), method: :get %>
+    </p>
+    
+
+  </p>
+    
   </div>
 
   <div>

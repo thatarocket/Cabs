@@ -1,9 +1,19 @@
 class UsuariosController < ApplicationController
-    before_action :find_resource, only: [:show, :edit, :update, :destroy]
+    before_action :find_resource, only: [:show, :edit, :update, :destroy, :contato, :create_contato]
 
     def find_resource
         @usuario = Usuario.find(params[:id])
     end
+
+    def contato
+    end
+
+    def create_contato
+        @usuario.contato = params["post"]["contato"]
+        @usuario.save(validate: false)
+        redirect_to @usuario, notice: "Contato criado com sucesso!"
+    end
+
 
     def new    
         @usuario = Usuario.new  
